@@ -1,0 +1,70 @@
+{
+  "step": "78B-1",
+  "control": "degree_preserving_random_rewired_reservoir",
+  "rewire_seed": 78001,
+  "device": "cuda",
+  "neurons": 166700,
+  "connections": 25582938,
+  "direct_input_neurons": 3328,
+  "indirect_readout_neurons": 5873,
+  "feature_blocks": [
+    "prompt_mean",
+    "prompt_max",
+    "prompt_final",
+    "feedback_mean",
+    "feedback_max",
+    "feedback_final",
+    "delayed_state"
+  ],
+  "feature_dimensions": 41111,
+  "neural_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "mapping_sha256": "b811159905e3d8a73bba8d005a71db69e571cf95ced97d928f07cf494c7d998a",
+  "final_holdout_sha256": "e2845e8aa6ae02e121c13eb1faace46c2788ebd372e14d0efb90b2c3a433317c",
+  "splits": {
+    "train": {
+      "logical_prompts": 36,
+      "neural_episodes": 180,
+      "neural_rows": 1140,
+      "feature_dimensions": 41111,
+      "file": "artifacts/features/generator_random_rewired_train.npz",
+      "sha256": "5d4364ecbbf4e9a11703690d8d63990efa309ce2579432a071d8c1e9f68d131b"
+    },
+    "validation": {
+      "logical_prompts": 6,
+      "neural_episodes": 30,
+      "neural_rows": 190,
+      "feature_dimensions": 41111,
+      "file": "artifacts/features/generator_random_rewired_validation.npz",
+      "sha256": "ecc20c65a5124fd9cc7fb0955b06b4bd80b755edb7feabd612c75b3875be1b85"
+    },
+    "test": {
+      "logical_prompts": 6,
+      "neural_episodes": 30,
+      "neural_rows": 190,
+      "feature_dimensions": 41111,
+      "file": "artifacts/features/generator_random_rewired_test.npz",
+      "sha256": "e432abf847ac376f0af4dc8449b7efb99003e7e5ba0ef6253427d99669d42b60"
+    },
+    "final_holdout": {
+      "logical_prompts": 24,
+      "neural_episodes": 120,
+      "neural_rows": 760,
+      "feature_dimensions": 41111,
+      "file": "artifacts/features/generator_random_rewired_final_holdout.npz",
+      "sha256": "6f5ef18c829b51d4d36dd91bdf3063472ebc8c643b2f0edb7b9d2e5b767bcaae"
+    }
+  },
+  "rewiring_definition": {
+    "presynaptic_edge_counts_preserved": true,
+    "synaptic_weights_preserved": true,
+    "postsynaptic_index_multiset_preserved": true,
+    "postsynaptic_targets_shuffled": true,
+    "original_files_modified": false
+  }
+}

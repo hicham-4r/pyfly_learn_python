@@ -1,0 +1,961 @@
+{
+  "step": "78A",
+  "created_at_utc": "2026-10-24T23:49:24.674264+00:00",
+  "control": "encoder_only_full_stimulus_history",
+  "description": "Position-aware prompt plus position-aware full feedback history; no FlyBrain reservoir.",
+  "feature_schema": {
+    "prompt_vocabulary": [
+      "a",
+      "assign",
+      "b",
+      "by",
+      "calculate",
+      "compute",
+      "copy",
+      "difference",
+      "divide",
+      "divided",
+      "from",
+      "in",
+      "into",
+      "minus",
+      "move",
+      "over",
+      "put",
+      "quotient",
+      "ratio",
+      "remove",
+      "result",
+      "set",
+      "store",
+      "subtract",
+      "take",
+      "to",
+      "value",
+      "write",
+      "x"
+    ],
+    "feedback_vocabulary": [
+      "PAD",
+      "BOS",
+      "EOS",
+      "PRINT",
+      "LPAREN",
+      "RPAREN",
+      "NAME_X",
+      "NAME_Y",
+      "NAME_A",
+      "NAME_B",
+      "STR_HELLO",
+      "NUM_0",
+      "NUM_1",
+      "ASSIGN",
+      "PLUS",
+      "MINUS",
+      "DIVIDE",
+      "NEWLINE"
+    ],
+    "max_prompt_positions": 6,
+    "max_feedback_positions": 7,
+    "feature_dimensions": 300
+  },
+  "selection": {
+    "selection_split": "development validation only",
+    "selection_metric": "macro F1, accuracy tie-break",
+    "selected_family": "Balanced Ridge",
+    "selected_configuration": "Balanced Ridge PCA=None alpha=0.001",
+    "validation_accuracy": 0.8157894736842105,
+    "validation_macro_f1": 0.8326599326599327,
+    "family_best": {
+      "Ridge": {
+        "family": "Ridge",
+        "name": "Ridge PCA=None alpha=0.001",
+        "pca": null,
+        "parameter": 0.001,
+        "validation_accuracy": 0.7894736842105263,
+        "validation_macro_f1": 0.7845117845117845
+      },
+      "Balanced Ridge": {
+        "family": "Balanced Ridge",
+        "name": "Balanced Ridge PCA=None alpha=0.001",
+        "pca": null,
+        "parameter": 0.001,
+        "validation_accuracy": 0.8157894736842105,
+        "validation_macro_f1": 0.8326599326599327
+      },
+      "Logistic": {
+        "family": "Logistic",
+        "name": "Logistic PCA=40 C=100.0",
+        "pca": 40,
+        "parameter": 100.0,
+        "validation_accuracy": 0.7368421052631579,
+        "validation_macro_f1": 0.7478114478114477
+      },
+      "Balanced Logistic": {
+        "family": "Balanced Logistic",
+        "name": "Balanced Logistic PCA=None C=0.1",
+        "pca": null,
+        "parameter": 0.1,
+        "validation_accuracy": 0.8157894736842105,
+        "validation_macro_f1": 0.7914381914381914
+      },
+      "Linear SVM": {
+        "family": "Linear SVM",
+        "name": "Linear SVM PCA=None C=10.0",
+        "pca": null,
+        "parameter": 10.0,
+        "validation_accuracy": 0.7631578947368421,
+        "validation_macro_f1": 0.772053872053872
+      },
+      "Balanced Linear SVM": {
+        "family": "Balanced Linear SVM",
+        "name": "Balanced Linear SVM PCA=None C=0.01",
+        "pca": null,
+        "parameter": 0.01,
+        "validation_accuracy": 0.8157894736842105,
+        "validation_macro_f1": 0.7914381914381914
+      }
+    }
+  },
+  "development_test_diagnostic": {
+    "top1_accuracy": 0.8947368421052632,
+    "top2_accuracy": 1.0,
+    "top3_accuracy": 1.0,
+    "macro_f1": 0.8962962962962963,
+    "semantic_accuracy": 0.8333333333333334,
+    "semantic_macro_f1": 0.8833333333333333,
+    "accuracy_by_position": {
+      "0": 0.8333333333333334,
+      "1": 1.0,
+      "2": 0.5,
+      "3": 1.0,
+      "4": 1.0,
+      "5": 1.0,
+      "6": 1.0
+    },
+    "accuracy_by_token": {
+      "ASSIGN": 1.0,
+      "DIVIDE": 1.0,
+      "EOS": 1.0,
+      "MINUS": 1.0,
+      "NAME_A": 0.5,
+      "NAME_B": 0.75,
+      "NAME_X": 1.0,
+      "NAME_Y": 1.0,
+      "NEWLINE": 1.0
+    },
+    "accuracy_by_intent": {
+      "copy_a_x": 1.0,
+      "copy_x_a": 0.8,
+      "div_ab": 0.8571428571428571,
+      "div_ba": 1.0,
+      "sub_ab": 0.8571428571428571,
+      "sub_ba": 0.8571428571428571
+    },
+    "class_order": [
+      "ASSIGN",
+      "DIVIDE",
+      "EOS",
+      "MINUS",
+      "NAME_A",
+      "NAME_B",
+      "NAME_X",
+      "NAME_Y",
+      "NEWLINE"
+    ]
+  },
+  "final_teacher_forced": {
+    "top1_accuracy": 0.9539473684210527,
+    "top2_accuracy": 1.0,
+    "top3_accuracy": 1.0,
+    "macro_f1": 0.9492837785520712,
+    "semantic_accuracy": 0.9270833333333334,
+    "semantic_macro_f1": 0.9429442508710801,
+    "accuracy_by_position": {
+      "0": 0.8333333333333334,
+      "1": 1.0,
+      "2": 0.875,
+      "3": 1.0,
+      "4": 1.0,
+      "5": 1.0,
+      "6": 1.0
+    },
+    "accuracy_by_token": {
+      "ASSIGN": 1.0,
+      "DIVIDE": 1.0,
+      "EOS": 1.0,
+      "MINUS": 1.0,
+      "NAME_A": 0.7083333333333334,
+      "NAME_B": 1.0,
+      "NAME_X": 1.0,
+      "NAME_Y": 1.0,
+      "NEWLINE": 1.0
+    },
+    "accuracy_by_intent": {
+      "copy_a_x": 1.0,
+      "copy_x_a": 0.8,
+      "div_ab": 1.0,
+      "div_ba": 1.0,
+      "sub_ab": 0.8928571428571429,
+      "sub_ba": 1.0
+    },
+    "class_order": [
+      "ASSIGN",
+      "DIVIDE",
+      "EOS",
+      "MINUS",
+      "NAME_A",
+      "NAME_B",
+      "NAME_X",
+      "NAME_Y",
+      "NEWLINE"
+    ]
+  },
+  "final_closed_loop": {
+    "aggregate": {
+      "mean_token_accuracy": 0.8976190476190476,
+      "exact_program_accuracy": 0.7083333333333334,
+      "valid_program_rate": 1.0,
+      "syntax_valid_rate": 1.0,
+      "eos_completion_rate": 1.0
+    },
+    "per_intent": {
+      "copy_a_x": {
+        "prompts": 4,
+        "mean_token_accuracy": 1.0,
+        "exact_program_accuracy": 1.0,
+        "valid_program_rate": 1.0
+      },
+      "copy_x_a": {
+        "prompts": 4,
+        "mean_token_accuracy": 0.6,
+        "exact_program_accuracy": 0.0,
+        "valid_program_rate": 1.0
+      },
+      "div_ab": {
+        "prompts": 4,
+        "mean_token_accuracy": 1.0,
+        "exact_program_accuracy": 1.0,
+        "valid_program_rate": 1.0
+      },
+      "div_ba": {
+        "prompts": 4,
+        "mean_token_accuracy": 1.0,
+        "exact_program_accuracy": 1.0,
+        "valid_program_rate": 1.0
+      },
+      "sub_ab": {
+        "prompts": 4,
+        "mean_token_accuracy": 0.7857142857142858,
+        "exact_program_accuracy": 0.25,
+        "valid_program_rate": 1.0
+      },
+      "sub_ba": {
+        "prompts": 4,
+        "mean_token_accuracy": 1.0,
+        "exact_program_accuracy": 1.0,
+        "valid_program_rate": 1.0
+      }
+    },
+    "predictions": [
+      {
+        "example_id": "final_sub_ab_01",
+        "intent": "sub_ab",
+        "target_code": "y = a - b",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "MINUS",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "MINUS",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = b - a",
+        "token_accuracy": 0.7142857142857143,
+        "exact_program": false,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_sub_ab_02",
+        "intent": "sub_ab",
+        "target_code": "y = a - b",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "MINUS",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "MINUS",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = b - a",
+        "token_accuracy": 0.7142857142857143,
+        "exact_program": false,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_sub_ab_03",
+        "intent": "sub_ab",
+        "target_code": "y = a - b",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "MINUS",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "MINUS",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = a - b",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_sub_ab_04",
+        "intent": "sub_ab",
+        "target_code": "y = a - b",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "MINUS",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "MINUS",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = b - a",
+        "token_accuracy": 0.7142857142857143,
+        "exact_program": false,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_sub_ba_01",
+        "intent": "sub_ba",
+        "target_code": "y = b - a",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "MINUS",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "MINUS",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = b - a",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_sub_ba_02",
+        "intent": "sub_ba",
+        "target_code": "y = b - a",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "MINUS",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "MINUS",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = b - a",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_sub_ba_03",
+        "intent": "sub_ba",
+        "target_code": "y = b - a",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "MINUS",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "MINUS",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = b - a",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_sub_ba_04",
+        "intent": "sub_ba",
+        "target_code": "y = b - a",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "MINUS",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "MINUS",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = b - a",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_copy_a_x_01",
+        "intent": "copy_a_x",
+        "target_code": "x = a",
+        "target_tokens": [
+          "NAME_X",
+          "ASSIGN",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_X",
+          "ASSIGN",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "x = a",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_copy_a_x_02",
+        "intent": "copy_a_x",
+        "target_code": "x = a",
+        "target_tokens": [
+          "NAME_X",
+          "ASSIGN",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_X",
+          "ASSIGN",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "x = a",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_copy_a_x_03",
+        "intent": "copy_a_x",
+        "target_code": "x = a",
+        "target_tokens": [
+          "NAME_X",
+          "ASSIGN",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_X",
+          "ASSIGN",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "x = a",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_copy_a_x_04",
+        "intent": "copy_a_x",
+        "target_code": "x = a",
+        "target_tokens": [
+          "NAME_X",
+          "ASSIGN",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_X",
+          "ASSIGN",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "x = a",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_copy_x_a_01",
+        "intent": "copy_x_a",
+        "target_code": "a = x",
+        "target_tokens": [
+          "NAME_A",
+          "ASSIGN",
+          "NAME_X",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_X",
+          "ASSIGN",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "x = a",
+        "token_accuracy": 0.6,
+        "exact_program": false,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_copy_x_a_02",
+        "intent": "copy_x_a",
+        "target_code": "a = x",
+        "target_tokens": [
+          "NAME_A",
+          "ASSIGN",
+          "NAME_X",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_X",
+          "ASSIGN",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "x = a",
+        "token_accuracy": 0.6,
+        "exact_program": false,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_copy_x_a_03",
+        "intent": "copy_x_a",
+        "target_code": "a = x",
+        "target_tokens": [
+          "NAME_A",
+          "ASSIGN",
+          "NAME_X",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_X",
+          "ASSIGN",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "x = a",
+        "token_accuracy": 0.6,
+        "exact_program": false,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_copy_x_a_04",
+        "intent": "copy_x_a",
+        "target_code": "a = x",
+        "target_tokens": [
+          "NAME_A",
+          "ASSIGN",
+          "NAME_X",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_X",
+          "ASSIGN",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "x = a",
+        "token_accuracy": 0.6,
+        "exact_program": false,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_div_ab_01",
+        "intent": "div_ab",
+        "target_code": "y = a / b",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "DIVIDE",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "DIVIDE",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = a / b",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_div_ab_02",
+        "intent": "div_ab",
+        "target_code": "y = a / b",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "DIVIDE",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "DIVIDE",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = a / b",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_div_ab_03",
+        "intent": "div_ab",
+        "target_code": "y = a / b",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "DIVIDE",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "DIVIDE",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = a / b",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_div_ab_04",
+        "intent": "div_ab",
+        "target_code": "y = a / b",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "DIVIDE",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "DIVIDE",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = a / b",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_div_ba_01",
+        "intent": "div_ba",
+        "target_code": "y = b / a",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "DIVIDE",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "DIVIDE",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = b / a",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_div_ba_02",
+        "intent": "div_ba",
+        "target_code": "y = b / a",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "DIVIDE",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "DIVIDE",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = b / a",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_div_ba_03",
+        "intent": "div_ba",
+        "target_code": "y = b / a",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "DIVIDE",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "DIVIDE",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = b / a",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      },
+      {
+        "example_id": "final_div_ba_04",
+        "intent": "div_ba",
+        "target_code": "y = b / a",
+        "target_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "DIVIDE",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "DIVIDE",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "generated_code": "y = b / a",
+        "token_accuracy": 1.0,
+        "exact_program": true,
+        "valid_program": true,
+        "syntax_valid": true,
+        "eos_completed": true
+      }
+    ]
+  },
+  "malecns_final_comparison": {
+    "teacher_forced": {
+      "top1_accuracy": 0.7618421052631579,
+      "top2_accuracy": 0.9355263157894737,
+      "top3_accuracy": 0.975,
+      "macro_f1": 0.6998749009112939,
+      "semantic_positions": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "semantic_accuracy": 0.6333333333333333,
+      "semantic_macro_f1": 0.6392009393750804
+    },
+    "closed_loop": {
+      "mean_token_accuracy": 0.7073511904761903,
+      "exact_program_accuracy": 0.11666666666666667,
+      "valid_program_rate": 0.39166666666666666,
+      "syntax_valid_rate": 0.39166666666666666,
+      "eos_completion_rate": 1.0
+    }
+  },
+  "integrity": {
+    "final_holdout_sha256": "e2845e8aa6ae02e121c13eb1faace46c2788ebd372e14d0efb90b2c3a433317c",
+    "protocol_sha256": "a1715f2bd161aa94dfb9623b24455372044faf5953b6c9db57cc43f33ffd9af6",
+    "model_sha256": "a0a06344357e4a35681cabb02d52fb5015f7b13a36263d50d256bde17ccf7371"
+  },
+  "rules": [
+    "No final-holdout result was used for model or hyperparameter selection.",
+    "The encoder-only control uses no FlyBrain state or recurrent dynamics.",
+    "The full directly presented stimulus history is explicitly represented.",
+    "The no-PCA option is included to make the encoder-only control strong."
+  ]
+}

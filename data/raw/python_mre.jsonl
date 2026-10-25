@@ -1,0 +1,53 @@
+{"id":"print_hello_01","intent":"print_hello","prompt_tokens":["print","hello"],"code":"print(\"hello\")"}
+{"id":"print_hello_02","intent":"print_hello","prompt_tokens":["show","hello"],"code":"print(\"hello\")"}
+{"id":"print_hello_03","intent":"print_hello","prompt_tokens":["display","hello"],"code":"print(\"hello\")"}
+{"id":"print_hello_04","intent":"print_hello","prompt_tokens":["output","hello"],"code":"print(\"hello\")"}
+{"id":"print_hello_05","intent":"print_hello","prompt_tokens":["write","hello"],"code":"print(\"hello\")"}
+{"id":"print_hello_06","intent":"print_hello","prompt_tokens":["say","hello"],"code":"print(\"hello\")"}
+{"id":"print_hello_07","intent":"print_hello","prompt_tokens":["echo","hello"],"code":"print(\"hello\")"}
+{"id":"print_hello_08","intent":"print_hello","prompt_tokens":["print","greeting"],"code":"print(\"hello\")"}
+
+{"id":"print_x_01","intent":"print_x","prompt_tokens":["print","x"],"code":"print(x)"}
+{"id":"print_x_02","intent":"print_x","prompt_tokens":["show","x"],"code":"print(x)"}
+{"id":"print_x_03","intent":"print_x","prompt_tokens":["display","x"],"code":"print(x)"}
+{"id":"print_x_04","intent":"print_x","prompt_tokens":["output","x"],"code":"print(x)"}
+{"id":"print_x_05","intent":"print_x","prompt_tokens":["write","x"],"code":"print(x)"}
+{"id":"print_x_06","intent":"print_x","prompt_tokens":["echo","x"],"code":"print(x)"}
+{"id":"print_x_07","intent":"print_x","prompt_tokens":["show","variable","x"],"code":"print(x)"}
+{"id":"print_x_08","intent":"print_x","prompt_tokens":["print","variable","x"],"code":"print(x)"}
+
+{"id":"set_x_zero_01","intent":"set_x_zero","prompt_tokens":["set","x","zero"],"code":"x = 0"}
+{"id":"set_x_zero_02","intent":"set_x_zero","prompt_tokens":["assign","x","zero"],"code":"x = 0"}
+{"id":"set_x_zero_03","intent":"set_x_zero","prompt_tokens":["make","x","zero"],"code":"x = 0"}
+{"id":"set_x_zero_04","intent":"set_x_zero","prompt_tokens":["store","zero","x"],"code":"x = 0"}
+{"id":"set_x_zero_05","intent":"set_x_zero","prompt_tokens":["x","equals","zero"],"code":"x = 0"}
+{"id":"set_x_zero_06","intent":"set_x_zero","prompt_tokens":["initialize","x","zero"],"code":"x = 0"}
+{"id":"set_x_zero_07","intent":"set_x_zero","prompt_tokens":["put","zero","x"],"code":"x = 0"}
+{"id":"set_x_zero_08","intent":"set_x_zero","prompt_tokens":["value","x","zero"],"code":"x = 0"}
+
+{"id":"set_x_one_01","intent":"set_x_one","prompt_tokens":["set","x","one"],"code":"x = 1"}
+{"id":"set_x_one_02","intent":"set_x_one","prompt_tokens":["assign","x","one"],"code":"x = 1"}
+{"id":"set_x_one_03","intent":"set_x_one","prompt_tokens":["make","x","one"],"code":"x = 1"}
+{"id":"set_x_one_04","intent":"set_x_one","prompt_tokens":["store","one","x"],"code":"x = 1"}
+{"id":"set_x_one_05","intent":"set_x_one","prompt_tokens":["x","equals","one"],"code":"x = 1"}
+{"id":"set_x_one_06","intent":"set_x_one","prompt_tokens":["initialize","x","one"],"code":"x = 1"}
+{"id":"set_x_one_07","intent":"set_x_one","prompt_tokens":["put","one","x"],"code":"x = 1"}
+{"id":"set_x_one_08","intent":"set_x_one","prompt_tokens":["value","x","one"],"code":"x = 1"}
+
+{"id":"add_01","intent":"add","prompt_tokens":["add","a","b"],"code":"y = a + b"}
+{"id":"add_02","intent":"add","prompt_tokens":["sum","a","b"],"code":"y = a + b"}
+{"id":"add_03","intent":"add","prompt_tokens":["plus","a","b"],"code":"y = a + b"}
+{"id":"add_04","intent":"add","prompt_tokens":["combine","a","b"],"code":"y = a + b"}
+{"id":"add_05","intent":"add","prompt_tokens":["add","b","a"],"code":"y = a + b"}
+{"id":"add_06","intent":"add","prompt_tokens":["calculate","a","plus","b"],"code":"y = a + b"}
+{"id":"add_07","intent":"add","prompt_tokens":["sum","b","a"],"code":"y = a + b"}
+{"id":"add_08","intent":"add","prompt_tokens":["result","a","plus","b"],"code":"y = a + b"}
+
+{"id":"subtract_01","intent":"subtract","prompt_tokens":["subtract","a","b"],"code":"y = a - b"}
+{"id":"subtract_02","intent":"subtract","prompt_tokens":["minus","a","b"],"code":"y = a - b"}
+{"id":"subtract_03","intent":"subtract","prompt_tokens":["difference","a","b"],"code":"y = a - b"}
+{"id":"subtract_04","intent":"subtract","prompt_tokens":["remove","b","a"],"code":"y = a - b"}
+{"id":"subtract_05","intent":"subtract","prompt_tokens":["calculate","a","minus","b"],"code":"y = a - b"}
+{"id":"subtract_06","intent":"subtract","prompt_tokens":["subtract","b","from","a"],"code":"y = a - b"}
+{"id":"subtract_07","intent":"subtract","prompt_tokens":["difference","between","a","b"],"code":"y = a - b"}
+{"id":"subtract_08","intent":"subtract","prompt_tokens":["result","a","minus","b"],"code":"y = a - b"}

@@ -1,0 +1,10 @@
+{
+  "chance_accuracy": 0.16666666666666666,
+  "validation_accuracy": 0.16666666666666666,
+  "test_accuracy": 0.1,
+  "macro_f1": 0.04945054945054945,
+  "pca_components": 10,
+  "ridge_alpha": 0.001,
+  "readout_type": "random_whole_brain",
+  "readout_neurons": 2000
+}

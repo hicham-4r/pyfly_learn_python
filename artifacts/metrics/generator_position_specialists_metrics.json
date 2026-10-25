@@ -1,0 +1,114 @@
+{
+  "overall_test_accuracy": 0.7789473684210526,
+  "overall_test_macro_f1": 0.6976606540859245,
+  "semantic_accuracy": 0.65,
+  "semantic_macro_f1": 0.6360550263523409,
+  "accuracy_by_position": {
+    "0": 0.6,
+    "1": 1.0,
+    "2": 0.43333333333333335,
+    "3": 0.7333333333333333,
+    "4": 0.8333333333333334,
+    "5": 1.0,
+    "6": 1.0
+  },
+  "specialists": {
+    "0": {
+      "type": "model",
+      "classes": [
+        "NAME_A",
+        "NAME_X",
+        "NAME_Y"
+      ],
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.5552910052910053,
+      "test_accuracy": 0.6,
+      "test_macro_f1": 0.39285714285714285,
+      "pca_components": 40,
+      "c_value": 0.01
+    },
+    "1": {
+      "type": "constant",
+      "classes": [
+        "ASSIGN"
+      ],
+      "validation_accuracy": 1.0,
+      "validation_macro_f1": 1.0,
+      "test_accuracy": 1.0,
+      "test_macro_f1": 1.0,
+      "constant_token": "ASSIGN"
+    },
+    "2": {
+      "type": "model",
+      "classes": [
+        "NAME_A",
+        "NAME_B",
+        "NAME_X"
+      ],
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.4074074074074074,
+      "test_accuracy": 0.43333333333333335,
+      "test_macro_f1": 0.3308913308913309,
+      "pca_components": 20,
+      "c_value": 0.01
+    },
+    "3": {
+      "type": "model",
+      "classes": [
+        "DIVIDE",
+        "MINUS",
+        "NEWLINE"
+      ],
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6666666666666666,
+      "test_accuracy": 0.7333333333333333,
+      "test_macro_f1": 0.7279624893435636,
+      "pca_components": 60,
+      "c_value": 1.0
+    },
+    "4": {
+      "type": "model",
+      "classes": [
+        "EOS",
+        "NAME_A",
+        "NAME_B"
+      ],
+      "validation_accuracy": 0.8333333333333334,
+      "validation_macro_f1": 0.8306878306878307,
+      "test_accuracy": 0.8333333333333334,
+      "test_macro_f1": 0.8329513623631271,
+      "pca_components": 60,
+      "c_value": 100.0
+    },
+    "5": {
+      "type": "constant",
+      "classes": [
+        "NEWLINE"
+      ],
+      "validation_accuracy": 1.0,
+      "validation_macro_f1": 1.0,
+      "test_accuracy": 1.0,
+      "test_macro_f1": 1.0,
+      "constant_token": "NEWLINE"
+    },
+    "6": {
+      "type": "constant",
+      "classes": [
+        "EOS"
+      ],
+      "validation_accuracy": 1.0,
+      "validation_macro_f1": 1.0,
+      "test_accuracy": 1.0,
+      "test_macro_f1": 1.0,
+      "constant_token": "EOS"
+    }
+  },
+  "global_decoder": {
+    "top1": 0.7789473684210526,
+    "macro_f1": 0.7119017706082382,
+    "semantic_accuracy": 0.65,
+    "top1_change": 0.0,
+    "macro_f1_change": -0.014241116522313746,
+    "semantic_change": 0.0
+  }
+}

@@ -1,0 +1,53 @@
+{"id":"sub_ab_01","intent":"sub_ab","prompt_tokens":["subtract","b","from","a"],"code":"y = a - b"}
+{"id":"sub_ab_02","intent":"sub_ab","prompt_tokens":["take","b","from","a"],"code":"y = a - b"}
+{"id":"sub_ab_03","intent":"sub_ab","prompt_tokens":["remove","b","from","a"],"code":"y = a - b"}
+{"id":"sub_ab_04","intent":"sub_ab","prompt_tokens":["difference","a","minus","b"],"code":"y = a - b"}
+{"id":"sub_ab_05","intent":"sub_ab","prompt_tokens":["calculate","a","minus","b"],"code":"y = a - b"}
+{"id":"sub_ab_06","intent":"sub_ab","prompt_tokens":["a","minus","b"],"code":"y = a - b"}
+{"id":"sub_ab_07","intent":"sub_ab","prompt_tokens":["subtract","value","b","from","value","a"],"code":"y = a - b"}
+{"id":"sub_ab_08","intent":"sub_ab","prompt_tokens":["result","a","minus","b"],"code":"y = a - b"}
+
+{"id":"sub_ba_01","intent":"sub_ba","prompt_tokens":["subtract","a","from","b"],"code":"y = b - a"}
+{"id":"sub_ba_02","intent":"sub_ba","prompt_tokens":["take","a","from","b"],"code":"y = b - a"}
+{"id":"sub_ba_03","intent":"sub_ba","prompt_tokens":["remove","a","from","b"],"code":"y = b - a"}
+{"id":"sub_ba_04","intent":"sub_ba","prompt_tokens":["difference","b","minus","a"],"code":"y = b - a"}
+{"id":"sub_ba_05","intent":"sub_ba","prompt_tokens":["calculate","b","minus","a"],"code":"y = b - a"}
+{"id":"sub_ba_06","intent":"sub_ba","prompt_tokens":["b","minus","a"],"code":"y = b - a"}
+{"id":"sub_ba_07","intent":"sub_ba","prompt_tokens":["subtract","value","a","from","value","b"],"code":"y = b - a"}
+{"id":"sub_ba_08","intent":"sub_ba","prompt_tokens":["result","b","minus","a"],"code":"y = b - a"}
+
+{"id":"copy_a_x_01","intent":"copy_a_x","prompt_tokens":["assign","a","to","x"],"code":"x = a"}
+{"id":"copy_a_x_02","intent":"copy_a_x","prompt_tokens":["put","a","in","x"],"code":"x = a"}
+{"id":"copy_a_x_03","intent":"copy_a_x","prompt_tokens":["copy","a","to","x"],"code":"x = a"}
+{"id":"copy_a_x_04","intent":"copy_a_x","prompt_tokens":["store","a","in","x"],"code":"x = a"}
+{"id":"copy_a_x_05","intent":"copy_a_x","prompt_tokens":["move","a","to","x"],"code":"x = a"}
+{"id":"copy_a_x_06","intent":"copy_a_x","prompt_tokens":["set","x","from","a"],"code":"x = a"}
+{"id":"copy_a_x_07","intent":"copy_a_x","prompt_tokens":["value","a","into","x"],"code":"x = a"}
+{"id":"copy_a_x_08","intent":"copy_a_x","prompt_tokens":["write","a","to","x"],"code":"x = a"}
+
+{"id":"copy_x_a_01","intent":"copy_x_a","prompt_tokens":["assign","x","to","a"],"code":"a = x"}
+{"id":"copy_x_a_02","intent":"copy_x_a","prompt_tokens":["put","x","in","a"],"code":"a = x"}
+{"id":"copy_x_a_03","intent":"copy_x_a","prompt_tokens":["copy","x","to","a"],"code":"a = x"}
+{"id":"copy_x_a_04","intent":"copy_x_a","prompt_tokens":["store","x","in","a"],"code":"a = x"}
+{"id":"copy_x_a_05","intent":"copy_x_a","prompt_tokens":["move","x","to","a"],"code":"a = x"}
+{"id":"copy_x_a_06","intent":"copy_x_a","prompt_tokens":["set","a","from","x"],"code":"a = x"}
+{"id":"copy_x_a_07","intent":"copy_x_a","prompt_tokens":["value","x","into","a"],"code":"a = x"}
+{"id":"copy_x_a_08","intent":"copy_x_a","prompt_tokens":["write","x","to","a"],"code":"a = x"}
+
+{"id":"div_ab_01","intent":"div_ab","prompt_tokens":["divide","a","by","b"],"code":"y = a / b"}
+{"id":"div_ab_02","intent":"div_ab","prompt_tokens":["divide","value","a","by","value","b"],"code":"y = a / b"}
+{"id":"div_ab_03","intent":"div_ab","prompt_tokens":["calculate","a","over","b"],"code":"y = a / b"}
+{"id":"div_ab_04","intent":"div_ab","prompt_tokens":["ratio","a","over","b"],"code":"y = a / b"}
+{"id":"div_ab_05","intent":"div_ab","prompt_tokens":["a","divided","by","b"],"code":"y = a / b"}
+{"id":"div_ab_06","intent":"div_ab","prompt_tokens":["result","a","divide","b"],"code":"y = a / b"}
+{"id":"div_ab_07","intent":"div_ab","prompt_tokens":["quotient","a","by","b"],"code":"y = a / b"}
+{"id":"div_ab_08","intent":"div_ab","prompt_tokens":["compute","a","over","b"],"code":"y = a / b"}
+
+{"id":"div_ba_01","intent":"div_ba","prompt_tokens":["divide","b","by","a"],"code":"y = b / a"}
+{"id":"div_ba_02","intent":"div_ba","prompt_tokens":["divide","value","b","by","value","a"],"code":"y = b / a"}
+{"id":"div_ba_03","intent":"div_ba","prompt_tokens":["calculate","b","over","a"],"code":"y = b / a"}
+{"id":"div_ba_04","intent":"div_ba","prompt_tokens":["ratio","b","over","a"],"code":"y = b / a"}
+{"id":"div_ba_05","intent":"div_ba","prompt_tokens":["b","divided","by","a"],"code":"y = b / a"}
+{"id":"div_ba_06","intent":"div_ba","prompt_tokens":["result","b","divide","a"],"code":"y = b / a"}
+{"id":"div_ba_07","intent":"div_ba","prompt_tokens":["quotient","b","by","a"],"code":"y = b / a"}
+{"id":"div_ba_08","intent":"div_ba","prompt_tokens":["compute","b","over","a"],"code":"y = b / a"}

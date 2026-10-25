@@ -1,0 +1,374 @@
+{
+  "episodes": 30,
+  "overall_position_accuracy": {
+    "0": 0.6666666666666666,
+    "1": 1.0,
+    "2": 0.6,
+    "3": 0.4,
+    "4": 0.43333333333333335,
+    "5": 0.6896551724137931,
+    "6": 0.6896551724137931
+  },
+  "family_position_accuracy": {
+    "copy_a_x": {
+      "0": 0.0,
+      "1": 1.0,
+      "2": 0.8,
+      "3": 0.0,
+      "4": 0.2,
+      "5": 0.0,
+      "6": 0.0
+    },
+    "copy_x_a": {
+      "0": 0.0,
+      "1": 1.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0
+    },
+    "div_ab": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 0.8,
+      "3": 1.0,
+      "4": 0.4,
+      "5": 1.0,
+      "6": 1.0
+    },
+    "div_ba": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 0.6,
+      "3": 0.4,
+      "4": 1.0,
+      "5": 1.0,
+      "6": 1.0
+    },
+    "sub_ab": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 0.6,
+      "3": 0.4,
+      "4": 0.8,
+      "5": 1.0,
+      "6": 1.0
+    },
+    "sub_ba": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 0.8,
+      "3": 0.6,
+      "4": 0.2,
+      "5": 1.0,
+      "6": 1.0
+    }
+  },
+  "family_summary": {
+    "copy_a_x": {
+      "exact_accuracy": 0.0,
+      "valid_rate": 0.2,
+      "mean_token_accuracy": 0.31999999999999995
+    },
+    "copy_x_a": {
+      "exact_accuracy": 0.0,
+      "valid_rate": 0.0,
+      "mean_token_accuracy": 0.14285714285714285
+    },
+    "div_ab": {
+      "exact_accuracy": 0.4,
+      "valid_rate": 0.6,
+      "mean_token_accuracy": 0.8857142857142858
+    },
+    "div_ba": {
+      "exact_accuracy": 0.2,
+      "valid_rate": 0.6,
+      "mean_token_accuracy": 0.8571428571428571
+    },
+    "sub_ab": {
+      "exact_accuracy": 0.2,
+      "valid_rate": 0.4,
+      "mean_token_accuracy": 0.8285714285714285
+    },
+    "sub_ba": {
+      "exact_accuracy": 0.2,
+      "valid_rate": 0.2,
+      "mean_token_accuracy": 0.8
+    }
+  },
+  "first_error_distribution": {
+    "0": {
+      "count": 10,
+      "rate": 0.3333333333333333
+    },
+    "2": {
+      "count": 6,
+      "rate": 0.2
+    },
+    "3": {
+      "count": 4,
+      "rate": 0.13333333333333333
+    },
+    "4": {
+      "count": 5,
+      "rate": 0.16666666666666666
+    },
+    "EXACT": {
+      "count": 5,
+      "rate": 0.16666666666666666
+    }
+  },
+  "family_first_error_distribution": {
+    "copy_a_x": {
+      "0": 5
+    },
+    "copy_x_a": {
+      "0": 5
+    },
+    "div_ab": {
+      "2": 1,
+      "4": 2,
+      "EXACT": 2
+    },
+    "div_ba": {
+      "2": 2,
+      "3": 2,
+      "EXACT": 1
+    },
+    "sub_ab": {
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "EXACT": 1
+    },
+    "sub_ba": {
+      "2": 1,
+      "3": 1,
+      "4": 2,
+      "EXACT": 1
+    }
+  },
+  "top_confusions": [
+    {
+      "target": "<NO_TARGET>",
+      "predicted": "NEWLINE",
+      "count": 9
+    },
+    {
+      "target": "<NO_TARGET>",
+      "predicted": "EOS",
+      "count": 9
+    },
+    {
+      "target": "EOS",
+      "predicted": "NAME_A",
+      "count": 8
+    },
+    {
+      "target": "NAME_A",
+      "predicted": "NAME_B",
+      "count": 8
+    },
+    {
+      "target": "NAME_B",
+      "predicted": "NAME_A",
+      "count": 7
+    },
+    {
+      "target": "NEWLINE",
+      "predicted": "MINUS",
+      "count": 6
+    },
+    {
+      "target": "NAME_X",
+      "predicted": "NAME_Y",
+      "count": 5
+    },
+    {
+      "target": "NAME_A",
+      "predicted": "NAME_Y",
+      "count": 5
+    },
+    {
+      "target": "NEWLINE",
+      "predicted": "DIVIDE",
+      "count": 4
+    },
+    {
+      "target": "NAME_X",
+      "predicted": "NAME_A",
+      "count": 4
+    },
+    {
+      "target": "MINUS",
+      "predicted": "DIVIDE",
+      "count": 4
+    },
+    {
+      "target": "DIVIDE",
+      "predicted": "MINUS",
+      "count": 2
+    },
+    {
+      "target": "NAME_X",
+      "predicted": "NAME_B",
+      "count": 1
+    },
+    {
+      "target": "EOS",
+      "predicted": "NAME_B",
+      "count": 1
+    },
+    {
+      "target": "DIVIDE",
+      "predicted": "NEWLINE",
+      "count": 1
+    },
+    {
+      "target": "MINUS",
+      "predicted": "NEWLINE",
+      "count": 1
+    }
+  ],
+  "position_confusions": {
+    "0": [
+      {
+        "target": "NAME_X",
+        "predicted": "NAME_Y",
+        "count": 5
+      },
+      {
+        "target": "NAME_A",
+        "predicted": "NAME_Y",
+        "count": 5
+      }
+    ],
+    "2": [
+      {
+        "target": "NAME_A",
+        "predicted": "NAME_B",
+        "count": 4
+      },
+      {
+        "target": "NAME_X",
+        "predicted": "NAME_A",
+        "count": 4
+      },
+      {
+        "target": "NAME_B",
+        "predicted": "NAME_A",
+        "count": 3
+      },
+      {
+        "target": "NAME_X",
+        "predicted": "NAME_B",
+        "count": 1
+      }
+    ],
+    "3": [
+      {
+        "target": "NEWLINE",
+        "predicted": "MINUS",
+        "count": 6
+      },
+      {
+        "target": "NEWLINE",
+        "predicted": "DIVIDE",
+        "count": 4
+      },
+      {
+        "target": "MINUS",
+        "predicted": "DIVIDE",
+        "count": 4
+      },
+      {
+        "target": "DIVIDE",
+        "predicted": "MINUS",
+        "count": 2
+      },
+      {
+        "target": "DIVIDE",
+        "predicted": "NEWLINE",
+        "count": 1
+      }
+    ],
+    "4": [
+      {
+        "target": "EOS",
+        "predicted": "NAME_A",
+        "count": 8
+      },
+      {
+        "target": "NAME_B",
+        "predicted": "NAME_A",
+        "count": 4
+      },
+      {
+        "target": "NAME_A",
+        "predicted": "NAME_B",
+        "count": 4
+      },
+      {
+        "target": "EOS",
+        "predicted": "NAME_B",
+        "count": 1
+      }
+    ],
+    "5": [
+      {
+        "target": "<NO_TARGET>",
+        "predicted": "NEWLINE",
+        "count": 9
+      }
+    ],
+    "6": [
+      {
+        "target": "<NO_TARGET>",
+        "predicted": "EOS",
+        "count": 9
+      }
+    ]
+  },
+  "first_error_top3_rate": 0.92,
+  "first_token_by_family": {
+    "copy_a_x": {
+      "accuracy": 0.0,
+      "predictions": {
+        "NAME_Y": 5
+      }
+    },
+    "copy_x_a": {
+      "accuracy": 0.0,
+      "predictions": {
+        "NAME_Y": 5
+      }
+    },
+    "div_ab": {
+      "accuracy": 1.0,
+      "predictions": {
+        "NAME_Y": 5
+      }
+    },
+    "div_ba": {
+      "accuracy": 1.0,
+      "predictions": {
+        "NAME_Y": 5
+      }
+    },
+    "sub_ab": {
+      "accuracy": 1.0,
+      "predictions": {
+        "NAME_Y": 5
+      }
+    },
+    "sub_ba": {
+      "accuracy": 1.0,
+      "predictions": {
+        "NAME_Y": 5
+      }
+    }
+  },
+  "copy_first_token_accuracy": 0.0,
+  "arithmetic_first_token_accuracy": 1.0
+}

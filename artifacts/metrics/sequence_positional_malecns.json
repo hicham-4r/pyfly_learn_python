@@ -1,0 +1,23 @@
+{
+  "chance_accuracy": 0.16666666666666666,
+  "validation_accuracy": 0.3333333333333333,
+  "test_accuracy": 0.5333333333333333,
+  "test_macro_f1": 0.47361111111111115,
+  "pca_components": 40,
+  "ridge_alpha": 0.001,
+  "classes": [
+    "copy_a_x",
+    "copy_x_a",
+    "div_ab",
+    "div_ba",
+    "sub_ab",
+    "sub_ba"
+  ],
+  "readout_type": "indirect_visual",
+  "encoder_type": "token_position_population",
+  "previous_comparison": {
+    "bag_of_words": 0.16666666666666666,
+    "position_aware_linear": 0.6666666666666666,
+    "old_malecns": 0.16666666666666666
+  }
+}

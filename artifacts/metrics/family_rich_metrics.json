@@ -1,0 +1,1405 @@
+{
+  "selected_classifier": "Linear SVM",
+  "pca_components": 100,
+  "parameter": 1.0,
+  "validation_accuracy": 0.8333333333333334,
+  "validation_macro_f1": 0.8329156223893066,
+  "test_accuracy": 0.6333333333333333,
+  "test_macro_f1": 0.6190849673202615,
+  "old_family_accuracy": 0.3667,
+  "old_family_macro_f1": 0.3282,
+  "accuracy_change": 0.2666333333333333,
+  "macro_f1_change": 0.29088496732026153,
+  "accuracy_by_prompt": {
+    "copy_a_x_02": 0.6,
+    "copy_x_a_02": 0.6,
+    "div_ab_01": 1.0,
+    "div_ba_04": 0.8,
+    "sub_ab_05": 0.2,
+    "sub_ba_03": 0.6
+  },
+  "family_validation_results": {
+    "Ridge": {
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7234848484848485,
+      "pca_components": 100,
+      "parameter": 0.001
+    },
+    "Balanced Ridge": {
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7234848484848485,
+      "pca_components": 100,
+      "parameter": 0.001
+    },
+    "Logistic": {
+      "validation_accuracy": 0.8333333333333334,
+      "validation_macro_f1": 0.8293460925039873,
+      "pca_components": 60,
+      "parameter": 10.0
+    },
+    "Balanced Logistic": {
+      "validation_accuracy": 0.8333333333333334,
+      "validation_macro_f1": 0.8293460925039873,
+      "pca_components": 60,
+      "parameter": 10.0
+    },
+    "Linear SVM": {
+      "validation_accuracy": 0.8333333333333334,
+      "validation_macro_f1": 0.8329156223893066,
+      "pca_components": 100,
+      "parameter": 1.0
+    },
+    "Balanced Linear SVM": {
+      "validation_accuracy": 0.8333333333333334,
+      "validation_macro_f1": 0.8329156223893066,
+      "pca_components": 100,
+      "parameter": 1.0
+    }
+  },
+  "all_validation_results": [
+    {
+      "family": "Ridge",
+      "components": 5,
+      "parameter": 0.001,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Ridge",
+      "components": 5,
+      "parameter": 0.01,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Ridge",
+      "components": 5,
+      "parameter": 0.1,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Ridge",
+      "components": 5,
+      "parameter": 1.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Ridge",
+      "components": 5,
+      "parameter": 10.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Ridge",
+      "components": 5,
+      "parameter": 100.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Ridge",
+      "components": 10,
+      "parameter": 0.001,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.2510822510822511
+    },
+    {
+      "family": "Ridge",
+      "components": 10,
+      "parameter": 0.01,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.2510822510822511
+    },
+    {
+      "family": "Ridge",
+      "components": 10,
+      "parameter": 0.1,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.2510822510822511
+    },
+    {
+      "family": "Ridge",
+      "components": 10,
+      "parameter": 1.0,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.2510822510822511
+    },
+    {
+      "family": "Ridge",
+      "components": 10,
+      "parameter": 10.0,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.2510822510822511
+    },
+    {
+      "family": "Ridge",
+      "components": 10,
+      "parameter": 100.0,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.2510822510822511
+    },
+    {
+      "family": "Ridge",
+      "components": 20,
+      "parameter": 0.001,
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.3986928104575163
+    },
+    {
+      "family": "Ridge",
+      "components": 20,
+      "parameter": 0.01,
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.3986928104575163
+    },
+    {
+      "family": "Ridge",
+      "components": 20,
+      "parameter": 0.1,
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.3986928104575163
+    },
+    {
+      "family": "Ridge",
+      "components": 20,
+      "parameter": 1.0,
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.3986928104575163
+    },
+    {
+      "family": "Ridge",
+      "components": 20,
+      "parameter": 10.0,
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.3986928104575163
+    },
+    {
+      "family": "Ridge",
+      "components": 20,
+      "parameter": 100.0,
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.3986928104575163
+    },
+    {
+      "family": "Ridge",
+      "components": 40,
+      "parameter": 0.001,
+      "validation_accuracy": 0.5333333333333333,
+      "validation_macro_f1": 0.42948717948717946
+    },
+    {
+      "family": "Ridge",
+      "components": 40,
+      "parameter": 0.01,
+      "validation_accuracy": 0.5333333333333333,
+      "validation_macro_f1": 0.42948717948717946
+    },
+    {
+      "family": "Ridge",
+      "components": 40,
+      "parameter": 0.1,
+      "validation_accuracy": 0.5333333333333333,
+      "validation_macro_f1": 0.42948717948717946
+    },
+    {
+      "family": "Ridge",
+      "components": 40,
+      "parameter": 1.0,
+      "validation_accuracy": 0.5333333333333333,
+      "validation_macro_f1": 0.42948717948717946
+    },
+    {
+      "family": "Ridge",
+      "components": 40,
+      "parameter": 10.0,
+      "validation_accuracy": 0.5333333333333333,
+      "validation_macro_f1": 0.42948717948717946
+    },
+    {
+      "family": "Ridge",
+      "components": 40,
+      "parameter": 100.0,
+      "validation_accuracy": 0.5333333333333333,
+      "validation_macro_f1": 0.42948717948717946
+    },
+    {
+      "family": "Ridge",
+      "components": 60,
+      "parameter": 0.001,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6552795031055901
+    },
+    {
+      "family": "Ridge",
+      "components": 60,
+      "parameter": 0.01,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6552795031055901
+    },
+    {
+      "family": "Ridge",
+      "components": 60,
+      "parameter": 0.1,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6552795031055901
+    },
+    {
+      "family": "Ridge",
+      "components": 60,
+      "parameter": 1.0,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6552795031055901
+    },
+    {
+      "family": "Ridge",
+      "components": 60,
+      "parameter": 10.0,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6552795031055901
+    },
+    {
+      "family": "Ridge",
+      "components": 60,
+      "parameter": 100.0,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6552795031055901
+    },
+    {
+      "family": "Ridge",
+      "components": 100,
+      "parameter": 0.001,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7234848484848485
+    },
+    {
+      "family": "Ridge",
+      "components": 100,
+      "parameter": 0.01,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7234848484848485
+    },
+    {
+      "family": "Ridge",
+      "components": 100,
+      "parameter": 0.1,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7234848484848485
+    },
+    {
+      "family": "Ridge",
+      "components": 100,
+      "parameter": 1.0,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7234848484848485
+    },
+    {
+      "family": "Ridge",
+      "components": 100,
+      "parameter": 10.0,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7234848484848485
+    },
+    {
+      "family": "Ridge",
+      "components": 100,
+      "parameter": 100.0,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7234848484848485
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 5,
+      "parameter": 0.001,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 5,
+      "parameter": 0.01,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 5,
+      "parameter": 0.1,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 5,
+      "parameter": 1.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 5,
+      "parameter": 10.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 5,
+      "parameter": 100.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 10,
+      "parameter": 0.001,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.2510822510822511
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 10,
+      "parameter": 0.01,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.2510822510822511
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 10,
+      "parameter": 0.1,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.2510822510822511
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 10,
+      "parameter": 1.0,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.2510822510822511
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 10,
+      "parameter": 10.0,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.2510822510822511
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 10,
+      "parameter": 100.0,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.2510822510822511
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 20,
+      "parameter": 0.001,
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.3986928104575163
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 20,
+      "parameter": 0.01,
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.3986928104575163
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 20,
+      "parameter": 0.1,
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.3986928104575163
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 20,
+      "parameter": 1.0,
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.3986928104575163
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 20,
+      "parameter": 10.0,
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.3986928104575163
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 20,
+      "parameter": 100.0,
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.3986928104575163
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 40,
+      "parameter": 0.001,
+      "validation_accuracy": 0.5333333333333333,
+      "validation_macro_f1": 0.42948717948717946
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 40,
+      "parameter": 0.01,
+      "validation_accuracy": 0.5333333333333333,
+      "validation_macro_f1": 0.42948717948717946
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 40,
+      "parameter": 0.1,
+      "validation_accuracy": 0.5333333333333333,
+      "validation_macro_f1": 0.42948717948717946
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 40,
+      "parameter": 1.0,
+      "validation_accuracy": 0.5333333333333333,
+      "validation_macro_f1": 0.42948717948717946
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 40,
+      "parameter": 10.0,
+      "validation_accuracy": 0.5333333333333333,
+      "validation_macro_f1": 0.42948717948717946
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 40,
+      "parameter": 100.0,
+      "validation_accuracy": 0.5333333333333333,
+      "validation_macro_f1": 0.42948717948717946
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 60,
+      "parameter": 0.001,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6552795031055901
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 60,
+      "parameter": 0.01,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6552795031055901
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 60,
+      "parameter": 0.1,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6552795031055901
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 60,
+      "parameter": 1.0,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6552795031055901
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 60,
+      "parameter": 10.0,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6552795031055901
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 60,
+      "parameter": 100.0,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6552795031055901
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 100,
+      "parameter": 0.001,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7234848484848485
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 100,
+      "parameter": 0.01,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7234848484848485
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 100,
+      "parameter": 0.1,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7234848484848485
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 100,
+      "parameter": 1.0,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7234848484848485
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 100,
+      "parameter": 10.0,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7234848484848485
+    },
+    {
+      "family": "Balanced Ridge",
+      "components": 100,
+      "parameter": 100.0,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7234848484848485
+    },
+    {
+      "family": "Logistic",
+      "components": 5,
+      "parameter": 0.01,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Logistic",
+      "components": 5,
+      "parameter": 0.1,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Logistic",
+      "components": 5,
+      "parameter": 1.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Logistic",
+      "components": 5,
+      "parameter": 10.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Logistic",
+      "components": 5,
+      "parameter": 100.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Logistic",
+      "components": 10,
+      "parameter": 0.01,
+      "validation_accuracy": 0.43333333333333335,
+      "validation_macro_f1": 0.35722819593787336
+    },
+    {
+      "family": "Logistic",
+      "components": 10,
+      "parameter": 0.1,
+      "validation_accuracy": 0.4,
+      "validation_macro_f1": 0.3975893387658093
+    },
+    {
+      "family": "Logistic",
+      "components": 10,
+      "parameter": 1.0,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.3650793650793651
+    },
+    {
+      "family": "Logistic",
+      "components": 10,
+      "parameter": 10.0,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.3650793650793651
+    },
+    {
+      "family": "Logistic",
+      "components": 10,
+      "parameter": 100.0,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.3650793650793651
+    },
+    {
+      "family": "Logistic",
+      "components": 20,
+      "parameter": 0.01,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.33825304000742595
+    },
+    {
+      "family": "Logistic",
+      "components": 20,
+      "parameter": 0.1,
+      "validation_accuracy": 0.26666666666666666,
+      "validation_macro_f1": 0.26515151515151514
+    },
+    {
+      "family": "Logistic",
+      "components": 20,
+      "parameter": 1.0,
+      "validation_accuracy": 0.23333333333333334,
+      "validation_macro_f1": 0.23654244306418218
+    },
+    {
+      "family": "Logistic",
+      "components": 20,
+      "parameter": 10.0,
+      "validation_accuracy": 0.23333333333333334,
+      "validation_macro_f1": 0.23654244306418218
+    },
+    {
+      "family": "Logistic",
+      "components": 20,
+      "parameter": 100.0,
+      "validation_accuracy": 0.23333333333333334,
+      "validation_macro_f1": 0.23654244306418218
+    },
+    {
+      "family": "Logistic",
+      "components": 40,
+      "parameter": 0.01,
+      "validation_accuracy": 0.6,
+      "validation_macro_f1": 0.5923684210526315
+    },
+    {
+      "family": "Logistic",
+      "components": 40,
+      "parameter": 0.1,
+      "validation_accuracy": 0.5666666666666667,
+      "validation_macro_f1": 0.5490778227620332
+    },
+    {
+      "family": "Logistic",
+      "components": 40,
+      "parameter": 1.0,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.4660725888796064
+    },
+    {
+      "family": "Logistic",
+      "components": 40,
+      "parameter": 10.0,
+      "validation_accuracy": 0.6,
+      "validation_macro_f1": 0.5817460317460318
+    },
+    {
+      "family": "Logistic",
+      "components": 40,
+      "parameter": 100.0,
+      "validation_accuracy": 0.6333333333333333,
+      "validation_macro_f1": 0.6235334713595583
+    },
+    {
+      "family": "Logistic",
+      "components": 60,
+      "parameter": 0.01,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.724867724867725
+    },
+    {
+      "family": "Logistic",
+      "components": 60,
+      "parameter": 0.1,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6453588681849551
+    },
+    {
+      "family": "Logistic",
+      "components": 60,
+      "parameter": 1.0,
+      "validation_accuracy": 0.7,
+      "validation_macro_f1": 0.6930946291560103
+    },
+    {
+      "family": "Logistic",
+      "components": 60,
+      "parameter": 10.0,
+      "validation_accuracy": 0.8333333333333334,
+      "validation_macro_f1": 0.8293460925039873
+    },
+    {
+      "family": "Logistic",
+      "components": 60,
+      "parameter": 100.0,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.7592592592592592
+    },
+    {
+      "family": "Logistic",
+      "components": 100,
+      "parameter": 0.01,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7306397306397306
+    },
+    {
+      "family": "Logistic",
+      "components": 100,
+      "parameter": 0.1,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6511784511784512
+    },
+    {
+      "family": "Logistic",
+      "components": 100,
+      "parameter": 1.0,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.7591706539074959
+    },
+    {
+      "family": "Logistic",
+      "components": 100,
+      "parameter": 10.0,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.7591706539074959
+    },
+    {
+      "family": "Logistic",
+      "components": 100,
+      "parameter": 100.0,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.7591706539074959
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 5,
+      "parameter": 0.01,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 5,
+      "parameter": 0.1,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 5,
+      "parameter": 1.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 5,
+      "parameter": 10.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 5,
+      "parameter": 100.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 10,
+      "parameter": 0.01,
+      "validation_accuracy": 0.43333333333333335,
+      "validation_macro_f1": 0.35722819593787336
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 10,
+      "parameter": 0.1,
+      "validation_accuracy": 0.4,
+      "validation_macro_f1": 0.3975893387658093
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 10,
+      "parameter": 1.0,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.3650793650793651
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 10,
+      "parameter": 10.0,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.3650793650793651
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 10,
+      "parameter": 100.0,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.3650793650793651
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 20,
+      "parameter": 0.01,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.33825304000742595
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 20,
+      "parameter": 0.1,
+      "validation_accuracy": 0.26666666666666666,
+      "validation_macro_f1": 0.26515151515151514
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 20,
+      "parameter": 1.0,
+      "validation_accuracy": 0.23333333333333334,
+      "validation_macro_f1": 0.23654244306418218
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 20,
+      "parameter": 10.0,
+      "validation_accuracy": 0.23333333333333334,
+      "validation_macro_f1": 0.23654244306418218
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 20,
+      "parameter": 100.0,
+      "validation_accuracy": 0.23333333333333334,
+      "validation_macro_f1": 0.23654244306418218
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 40,
+      "parameter": 0.01,
+      "validation_accuracy": 0.6,
+      "validation_macro_f1": 0.5923684210526315
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 40,
+      "parameter": 0.1,
+      "validation_accuracy": 0.5666666666666667,
+      "validation_macro_f1": 0.5490778227620332
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 40,
+      "parameter": 1.0,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.4660725888796064
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 40,
+      "parameter": 10.0,
+      "validation_accuracy": 0.6,
+      "validation_macro_f1": 0.5817460317460318
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 40,
+      "parameter": 100.0,
+      "validation_accuracy": 0.6333333333333333,
+      "validation_macro_f1": 0.6235334713595583
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 60,
+      "parameter": 0.01,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.724867724867725
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 60,
+      "parameter": 0.1,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6453588681849551
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 60,
+      "parameter": 1.0,
+      "validation_accuracy": 0.7,
+      "validation_macro_f1": 0.6930946291560103
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 60,
+      "parameter": 10.0,
+      "validation_accuracy": 0.8333333333333334,
+      "validation_macro_f1": 0.8293460925039873
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 60,
+      "parameter": 100.0,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.7592592592592592
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 100,
+      "parameter": 0.01,
+      "validation_accuracy": 0.7333333333333333,
+      "validation_macro_f1": 0.7306397306397306
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 100,
+      "parameter": 0.1,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6511784511784512
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 100,
+      "parameter": 1.0,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.7591706539074959
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 100,
+      "parameter": 10.0,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.7591706539074959
+    },
+    {
+      "family": "Balanced Logistic",
+      "components": 100,
+      "parameter": 100.0,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.7591706539074959
+    },
+    {
+      "family": "Linear SVM",
+      "components": 5,
+      "parameter": 0.001,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Linear SVM",
+      "components": 5,
+      "parameter": 0.01,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Linear SVM",
+      "components": 5,
+      "parameter": 0.1,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Linear SVM",
+      "components": 5,
+      "parameter": 1.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Linear SVM",
+      "components": 5,
+      "parameter": 10.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Linear SVM",
+      "components": 10,
+      "parameter": 0.001,
+      "validation_accuracy": 0.43333333333333335,
+      "validation_macro_f1": 0.34432234432234426
+    },
+    {
+      "family": "Linear SVM",
+      "components": 10,
+      "parameter": 0.01,
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.38655462184873945
+    },
+    {
+      "family": "Linear SVM",
+      "components": 10,
+      "parameter": 0.1,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.4103535353535353
+    },
+    {
+      "family": "Linear SVM",
+      "components": 10,
+      "parameter": 1.0,
+      "validation_accuracy": 0.4,
+      "validation_macro_f1": 0.32758620689655177
+    },
+    {
+      "family": "Linear SVM",
+      "components": 10,
+      "parameter": 10.0,
+      "validation_accuracy": 0.43333333333333335,
+      "validation_macro_f1": 0.4157509157509158
+    },
+    {
+      "family": "Linear SVM",
+      "components": 20,
+      "parameter": 0.001,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.41269841269841273
+    },
+    {
+      "family": "Linear SVM",
+      "components": 20,
+      "parameter": 0.01,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.4227941176470589
+    },
+    {
+      "family": "Linear SVM",
+      "components": 20,
+      "parameter": 0.1,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.3235867446393762
+    },
+    {
+      "family": "Linear SVM",
+      "components": 20,
+      "parameter": 1.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.32929292929292925
+    },
+    {
+      "family": "Linear SVM",
+      "components": 20,
+      "parameter": 10.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.3292412617220801
+    },
+    {
+      "family": "Linear SVM",
+      "components": 40,
+      "parameter": 0.001,
+      "validation_accuracy": 0.5666666666666667,
+      "validation_macro_f1": 0.4937839937839938
+    },
+    {
+      "family": "Linear SVM",
+      "components": 40,
+      "parameter": 0.01,
+      "validation_accuracy": 0.6333333333333333,
+      "validation_macro_f1": 0.613384484228474
+    },
+    {
+      "family": "Linear SVM",
+      "components": 40,
+      "parameter": 0.1,
+      "validation_accuracy": 0.6333333333333333,
+      "validation_macro_f1": 0.6296296296296297
+    },
+    {
+      "family": "Linear SVM",
+      "components": 40,
+      "parameter": 1.0,
+      "validation_accuracy": 0.6333333333333333,
+      "validation_macro_f1": 0.6296296296296297
+    },
+    {
+      "family": "Linear SVM",
+      "components": 40,
+      "parameter": 10.0,
+      "validation_accuracy": 0.5666666666666667,
+      "validation_macro_f1": 0.5528812974465148
+    },
+    {
+      "family": "Linear SVM",
+      "components": 60,
+      "parameter": 0.001,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6356107660455487
+    },
+    {
+      "family": "Linear SVM",
+      "components": 60,
+      "parameter": 0.01,
+      "validation_accuracy": 0.8,
+      "validation_macro_f1": 0.7956228956228957
+    },
+    {
+      "family": "Linear SVM",
+      "components": 60,
+      "parameter": 0.1,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.753076988371106
+    },
+    {
+      "family": "Linear SVM",
+      "components": 60,
+      "parameter": 1.0,
+      "validation_accuracy": 0.8,
+      "validation_macro_f1": 0.7919191919191918
+    },
+    {
+      "family": "Linear SVM",
+      "components": 60,
+      "parameter": 10.0,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.753076988371106
+    },
+    {
+      "family": "Linear SVM",
+      "components": 100,
+      "parameter": 0.001,
+      "validation_accuracy": 0.8,
+      "validation_macro_f1": 0.7916666666666666
+    },
+    {
+      "family": "Linear SVM",
+      "components": 100,
+      "parameter": 0.01,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.7619047619047619
+    },
+    {
+      "family": "Linear SVM",
+      "components": 100,
+      "parameter": 0.1,
+      "validation_accuracy": 0.8,
+      "validation_macro_f1": 0.7999999999999999
+    },
+    {
+      "family": "Linear SVM",
+      "components": 100,
+      "parameter": 1.0,
+      "validation_accuracy": 0.8333333333333334,
+      "validation_macro_f1": 0.8329156223893066
+    },
+    {
+      "family": "Linear SVM",
+      "components": 100,
+      "parameter": 10.0,
+      "validation_accuracy": 0.8333333333333334,
+      "validation_macro_f1": 0.8329156223893066
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 5,
+      "parameter": 0.001,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 5,
+      "parameter": 0.01,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 5,
+      "parameter": 0.1,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 5,
+      "parameter": 1.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 5,
+      "parameter": 10.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.19047619047619047
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 10,
+      "parameter": 0.001,
+      "validation_accuracy": 0.43333333333333335,
+      "validation_macro_f1": 0.34432234432234426
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 10,
+      "parameter": 0.01,
+      "validation_accuracy": 0.4666666666666667,
+      "validation_macro_f1": 0.38655462184873945
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 10,
+      "parameter": 0.1,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.4103535353535353
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 10,
+      "parameter": 1.0,
+      "validation_accuracy": 0.4,
+      "validation_macro_f1": 0.32758620689655177
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 10,
+      "parameter": 10.0,
+      "validation_accuracy": 0.43333333333333335,
+      "validation_macro_f1": 0.4157509157509158
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 20,
+      "parameter": 0.001,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.41269841269841273
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 20,
+      "parameter": 0.01,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.4227941176470589
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 20,
+      "parameter": 0.1,
+      "validation_accuracy": 0.36666666666666664,
+      "validation_macro_f1": 0.3235867446393762
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 20,
+      "parameter": 1.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.32929292929292925
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 20,
+      "parameter": 10.0,
+      "validation_accuracy": 0.3333333333333333,
+      "validation_macro_f1": 0.3292412617220801
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 40,
+      "parameter": 0.001,
+      "validation_accuracy": 0.5666666666666667,
+      "validation_macro_f1": 0.4937839937839938
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 40,
+      "parameter": 0.01,
+      "validation_accuracy": 0.6333333333333333,
+      "validation_macro_f1": 0.613384484228474
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 40,
+      "parameter": 0.1,
+      "validation_accuracy": 0.6333333333333333,
+      "validation_macro_f1": 0.6296296296296297
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 40,
+      "parameter": 1.0,
+      "validation_accuracy": 0.6333333333333333,
+      "validation_macro_f1": 0.6296296296296297
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 40,
+      "parameter": 10.0,
+      "validation_accuracy": 0.5666666666666667,
+      "validation_macro_f1": 0.5528812974465148
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 60,
+      "parameter": 0.001,
+      "validation_accuracy": 0.6666666666666666,
+      "validation_macro_f1": 0.6356107660455487
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 60,
+      "parameter": 0.01,
+      "validation_accuracy": 0.8,
+      "validation_macro_f1": 0.7956228956228957
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 60,
+      "parameter": 0.1,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.753076988371106
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 60,
+      "parameter": 1.0,
+      "validation_accuracy": 0.8,
+      "validation_macro_f1": 0.7919191919191918
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 60,
+      "parameter": 10.0,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.753076988371106
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 100,
+      "parameter": 0.001,
+      "validation_accuracy": 0.8,
+      "validation_macro_f1": 0.7916666666666666
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 100,
+      "parameter": 0.01,
+      "validation_accuracy": 0.7666666666666667,
+      "validation_macro_f1": 0.7619047619047619
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 100,
+      "parameter": 0.1,
+      "validation_accuracy": 0.8,
+      "validation_macro_f1": 0.7999999999999999
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 100,
+      "parameter": 1.0,
+      "validation_accuracy": 0.8333333333333334,
+      "validation_macro_f1": 0.8329156223893066
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "components": 100,
+      "parameter": 10.0,
+      "validation_accuracy": 0.8333333333333334,
+      "validation_macro_f1": 0.8329156223893066
+    }
+  ]
+}

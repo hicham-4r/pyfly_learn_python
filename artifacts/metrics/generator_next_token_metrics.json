@@ -1,0 +1,46 @@
+{
+  "uniform_chance": 0.1111111111111111,
+  "majority_baseline": 0.15789473684210525,
+  "validation_accuracy": 0.5684210526315789,
+  "validation_macro_f1": 0.40578083887943045,
+  "test_top1_accuracy": 0.6631578947368421,
+  "test_top2_accuracy": 0.8526315789473684,
+  "test_top3_accuracy": 1.0,
+  "test_macro_f1": 0.4365967365967366,
+  "pca_components": 100,
+  "ridge_alpha": 0.001,
+  "classes": [
+    "ASSIGN",
+    "DIVIDE",
+    "EOS",
+    "MINUS",
+    "NAME_A",
+    "NAME_B",
+    "NAME_X",
+    "NAME_Y",
+    "NEWLINE"
+  ],
+  "accuracy_by_position": {
+    "0": 0.6666666666666666,
+    "1": 1.0,
+    "2": 0.5,
+    "3": 0.3333333333333333,
+    "4": 0.36666666666666664,
+    "5": 1.0,
+    "6": 1.0
+  },
+  "accuracy_by_token": {
+    "ASSIGN": 1.0,
+    "DIVIDE": 0.0,
+    "EOS": 1.0,
+    "MINUS": 0.0,
+    "NAME_A": 0.5,
+    "NAME_B": 0.05,
+    "NAME_X": 0.0,
+    "NAME_Y": 1.0,
+    "NEWLINE": 1.0
+  },
+  "train_samples": 1140,
+  "validation_samples": 190,
+  "test_samples": 190
+}

@@ -1,0 +1,663 @@
+{
+  "step": "78B-2",
+  "created_at_utc": "2026-10-25T00:01:21.223030+00:00",
+  "control": "degree_preserving_random_rewired_reservoir",
+  "rewire_seed": 78001,
+  "selection": {
+    "selection_split": "development validation only",
+    "selection_metric": "macro F1; accuracy tie-break",
+    "search_grid": {
+      "pca_components": [
+        10,
+        20,
+        40,
+        60,
+        100
+      ],
+      "ridge_alphas": [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "logistic_c_values": [
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "svm_c_values": [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ]
+    },
+    "selected_family": "Balanced Linear SVM",
+    "selected_configuration": "Balanced Linear SVM PCA=100 C=0.1",
+    "validation_accuracy": 0.5894736842105263,
+    "validation_macro_f1": 0.4912331603142647,
+    "family_best": {
+      "Ridge": {
+        "family": "Ridge",
+        "components": 100,
+        "parameter": 0.001,
+        "name": "Ridge PCA=100 alpha=0.001",
+        "validation_accuracy": 0.5526315789473685,
+        "validation_macro_f1": 0.3908297165678424
+      },
+      "Balanced Ridge": {
+        "family": "Balanced Ridge",
+        "components": 100,
+        "parameter": 0.001,
+        "name": "Balanced Ridge PCA=100 alpha=0.001",
+        "validation_accuracy": 0.5,
+        "validation_macro_f1": 0.44669733369967773
+      },
+      "Logistic": {
+        "family": "Logistic",
+        "components": 60,
+        "parameter": 1.0,
+        "name": "Logistic PCA=60 C=1.0",
+        "validation_accuracy": 0.5473684210526316,
+        "validation_macro_f1": 0.4556803601114102
+      },
+      "Balanced Logistic": {
+        "family": "Balanced Logistic",
+        "components": 60,
+        "parameter": 0.01,
+        "name": "Balanced Logistic PCA=60 C=0.01",
+        "validation_accuracy": 0.531578947368421,
+        "validation_macro_f1": 0.4814241941360586
+      },
+      "Linear SVM": {
+        "family": "Linear SVM",
+        "components": 60,
+        "parameter": 1.0,
+        "name": "Linear SVM PCA=60 C=1.0",
+        "validation_accuracy": 0.5578947368421052,
+        "validation_macro_f1": 0.4462469629136296
+      },
+      "Balanced Linear SVM": {
+        "family": "Balanced Linear SVM",
+        "components": 100,
+        "parameter": 0.1,
+        "name": "Balanced Linear SVM PCA=100 C=0.1",
+        "validation_accuracy": 0.5894736842105263,
+        "validation_macro_f1": 0.4912331603142647
+      }
+    }
+  },
+  "development_test_diagnostic": {
+    "top1_accuracy": 0.7157894736842105,
+    "top2_accuracy": 0.868421052631579,
+    "top3_accuracy": 0.9842105263157894,
+    "macro_f1": 0.6035647632717132,
+    "semantic_accuracy": 0.55,
+    "semantic_macro_f1": 0.49688224427702116,
+    "accuracy_by_position": {
+      "0": 0.6666666666666666,
+      "1": 1.0,
+      "2": 0.43333333333333335,
+      "3": 0.5666666666666667,
+      "4": 0.5333333333333333,
+      "5": 1.0,
+      "6": 1.0
+    },
+    "accuracy_by_token": {
+      "ASSIGN": 1.0,
+      "DIVIDE": 0.9,
+      "EOS": 1.0,
+      "MINUS": 0.3,
+      "NAME_A": 0.43333333333333335,
+      "NAME_B": 0.3,
+      "NAME_X": 0.0,
+      "NAME_Y": 1.0,
+      "NEWLINE": 0.8333333333333334
+    },
+    "accuracy_by_intent": {
+      "copy_a_x": 0.64,
+      "copy_x_a": 0.48,
+      "div_ab": 0.8857142857142857,
+      "div_ba": 0.6857142857142857,
+      "sub_ab": 0.8857142857142857,
+      "sub_ba": 0.6285714285714286
+    },
+    "class_order": [
+      "ASSIGN",
+      "DIVIDE",
+      "EOS",
+      "MINUS",
+      "NAME_A",
+      "NAME_B",
+      "NAME_X",
+      "NAME_Y",
+      "NEWLINE"
+    ],
+    "confusion_matrix": [
+      [
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        9,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        13,
+        6,
+        2,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        10,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        25
+      ]
+    ]
+  },
+  "final_teacher_forced": {
+    "top1_accuracy": 0.6473684210526316,
+    "top2_accuracy": 0.8105263157894737,
+    "top3_accuracy": 0.906578947368421,
+    "macro_f1": 0.5730083577024437,
+    "semantic_accuracy": 0.55,
+    "semantic_macro_f1": 0.5136689386152206,
+    "accuracy_by_position": {
+      "0": 0.6833333333333333,
+      "1": 1.0,
+      "2": 0.48333333333333334,
+      "3": 0.5583333333333333,
+      "4": 0.475,
+      "5": 0.625,
+      "6": 0.725
+    },
+    "accuracy_by_token": {
+      "ASSIGN": 1.0,
+      "DIVIDE": 0.85,
+      "EOS": 0.8083333333333333,
+      "MINUS": 0.0,
+      "NAME_A": 0.24166666666666667,
+      "NAME_B": 0.4625,
+      "NAME_X": 0.45,
+      "NAME_Y": 0.925,
+      "NEWLINE": 0.6916666666666667
+    },
+    "accuracy_by_intent": {
+      "copy_a_x": 0.72,
+      "copy_x_a": 0.64,
+      "div_ab": 0.9142857142857143,
+      "div_ba": 0.7285714285714285,
+      "sub_ab": 0.42142857142857143,
+      "sub_ba": 0.4785714285714286
+    },
+    "class_order": [
+      "ASSIGN",
+      "DIVIDE",
+      "EOS",
+      "MINUS",
+      "NAME_A",
+      "NAME_B",
+      "NAME_X",
+      "NAME_Y",
+      "NEWLINE"
+    ],
+    "confusion_matrix": [
+      [
+        120,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        34,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        97,
+        0,
+        9,
+        8,
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30
+      ],
+      [
+        0,
+        0,
+        22,
+        0,
+        29,
+        35,
+        21,
+        13,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        0,
+        21,
+        37,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        18,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        5,
+        1,
+        0,
+        74,
+        0
+      ],
+      [
+        0,
+        5,
+        29,
+        2,
+        1,
+        0,
+        0,
+        0,
+        83
+      ]
+    ]
+  },
+  "final_neural_seed_uncertainty": {
+    "per_seed": {
+      "0": {
+        "top1_accuracy": 0.631578947368421,
+        "macro_f1": 0.5612843837990037,
+        "semantic_accuracy": 0.5416666666666666
+      },
+      "1": {
+        "top1_accuracy": 0.6447368421052632,
+        "macro_f1": 0.5721286452881239,
+        "semantic_accuracy": 0.5520833333333334
+      },
+      "2": {
+        "top1_accuracy": 0.6513157894736842,
+        "macro_f1": 0.580575104863983,
+        "semantic_accuracy": 0.5416666666666666
+      },
+      "3": {
+        "top1_accuracy": 0.6578947368421053,
+        "macro_f1": 0.5724803229082183,
+        "semantic_accuracy": 0.5625
+      },
+      "4": {
+        "top1_accuracy": 0.6513157894736842,
+        "macro_f1": 0.5777911046215176,
+        "semantic_accuracy": 0.5520833333333334
+      }
+    },
+    "mean_sd": {
+      "top1_accuracy": {
+        "mean": 0.6473684210526315,
+        "sd": 0.008924118398849056
+      },
+      "macro_f1": {
+        "mean": 0.5728519122961694,
+        "sd": 0.006610782610814179
+      },
+      "semantic_accuracy": {
+        "mean": 0.55,
+        "sd": 0.007795119555779065
+      }
+    }
+  },
+  "comparison": {
+    "encoder_only": {
+      "top1_accuracy": 0.9539473684210527,
+      "top2_accuracy": 1.0,
+      "top3_accuracy": 1.0,
+      "macro_f1": 0.9492837785520712,
+      "semantic_accuracy": 0.9270833333333334,
+      "semantic_macro_f1": 0.9429442508710801,
+      "accuracy_by_position": {
+        "0": 0.8333333333333334,
+        "1": 1.0,
+        "2": 0.875,
+        "3": 1.0,
+        "4": 1.0,
+        "5": 1.0,
+        "6": 1.0
+      },
+      "accuracy_by_token": {
+        "ASSIGN": 1.0,
+        "DIVIDE": 1.0,
+        "EOS": 1.0,
+        "MINUS": 1.0,
+        "NAME_A": 0.7083333333333334,
+        "NAME_B": 1.0,
+        "NAME_X": 1.0,
+        "NAME_Y": 1.0,
+        "NEWLINE": 1.0
+      },
+      "accuracy_by_intent": {
+        "copy_a_x": 1.0,
+        "copy_x_a": 0.8,
+        "div_ab": 1.0,
+        "div_ba": 1.0,
+        "sub_ab": 0.8928571428571429,
+        "sub_ba": 1.0
+      },
+      "class_order": [
+        "ASSIGN",
+        "DIVIDE",
+        "EOS",
+        "MINUS",
+        "NAME_A",
+        "NAME_B",
+        "NAME_X",
+        "NAME_Y",
+        "NEWLINE"
+      ]
+    },
+    "real_malecns": {
+      "top1_accuracy": 0.7618421052631579,
+      "top2_accuracy": 0.9355263157894737,
+      "top3_accuracy": 0.975,
+      "macro_f1": 0.6998749009112939,
+      "semantic_positions": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "semantic_accuracy": 0.6333333333333333,
+      "semantic_macro_f1": 0.6392009393750804
+    },
+    "random_rewired_malecns": {
+      "top1_accuracy": 0.6473684210526316,
+      "top2_accuracy": 0.8105263157894737,
+      "top3_accuracy": 0.906578947368421,
+      "macro_f1": 0.5730083577024437,
+      "semantic_accuracy": 0.55,
+      "semantic_macro_f1": 0.5136689386152206,
+      "accuracy_by_position": {
+        "0": 0.6833333333333333,
+        "1": 1.0,
+        "2": 0.48333333333333334,
+        "3": 0.5583333333333333,
+        "4": 0.475,
+        "5": 0.625,
+        "6": 0.725
+      },
+      "accuracy_by_token": {
+        "ASSIGN": 1.0,
+        "DIVIDE": 0.85,
+        "EOS": 0.8083333333333333,
+        "MINUS": 0.0,
+        "NAME_A": 0.24166666666666667,
+        "NAME_B": 0.4625,
+        "NAME_X": 0.45,
+        "NAME_Y": 0.925,
+        "NEWLINE": 0.6916666666666667
+      },
+      "accuracy_by_intent": {
+        "copy_a_x": 0.72,
+        "copy_x_a": 0.64,
+        "div_ab": 0.9142857142857143,
+        "div_ba": 0.7285714285714285,
+        "sub_ab": 0.42142857142857143,
+        "sub_ba": 0.4785714285714286
+      },
+      "class_order": [
+        "ASSIGN",
+        "DIVIDE",
+        "EOS",
+        "MINUS",
+        "NAME_A",
+        "NAME_B",
+        "NAME_X",
+        "NAME_Y",
+        "NEWLINE"
+      ],
+      "confusion_matrix": [
+        [
+          120,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          34,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          97,
+          0,
+          9,
+          8,
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          30
+        ],
+        [
+          0,
+          0,
+          22,
+          0,
+          29,
+          35,
+          21,
+          13,
+          0
+        ],
+        [
+          0,
+          0,
+          22,
+          0,
+          21,
+          37,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          18,
+          12,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          5,
+          1,
+          0,
+          74,
+          0
+        ],
+        [
+          0,
+          5,
+          29,
+          2,
+          1,
+          0,
+          0,
+          0,
+          83
+        ]
+      ]
+    }
+  },
+  "integrity": {
+    "feature_manifest_sha256": "a86f07393fa477b5aab0926fbbd0a5f635ce117524203036d0f932853579d9c6",
+    "protocol_sha256": "a1715f2bd161aa94dfb9623b24455372044faf5953b6c9db57cc43f33ffd9af6",
+    "final_holdout_sha256": "e2845e8aa6ae02e121c13eb1faace46c2788ebd372e14d0efb90b2c3a433317c",
+    "model_sha256": "5445328b30727efb5c886c74959080285a2e8d9b9887bc270dd72b5db2a44a2e",
+    "feature_files": {
+      "train": "5d4364ecbbf4e9a11703690d8d63990efa309ce2579432a071d8c1e9f68d131b",
+      "validation": "ecc20c65a5124fd9cc7fb0955b06b4bd80b755edb7feabd612c75b3875be1b85",
+      "development_test": "e432abf847ac376f0af4dc8449b7efb99003e7e5ba0ef6253427d99669d42b60",
+      "final_holdout": "6f5ef18c829b51d4d36dd91bdf3063472ebc8c643b2f0edb7b9d2e5b767bcaae"
+    }
+  },
+  "rules": [
+    "The random-reservoir decoder was selected using development validation only.",
+    "The final holdout was not used for decoder-family or hyperparameter selection.",
+    "The final model was refit on all 48 development prompts only.",
+    "The exact Step-62 decoder search grid was used for fairness with real MaleCNS."
+  ]
+}

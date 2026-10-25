@@ -1,0 +1,232 @@
+{
+  "step": "78C",
+  "created_at_utc": "2026-10-25T00:15:37.979603+00:00",
+  "control": "position_stratified_shuffled_labels",
+  "decoder_configuration": "Balanced Logistic PCA=100 C=0.1",
+  "shuffle_definition": {
+    "repetitions": 20,
+    "shuffle_seeds": [
+      78010,
+      78011,
+      78012,
+      78013,
+      78014,
+      78015,
+      78016,
+      78017,
+      78018,
+      78019,
+      78020,
+      78021,
+      78022,
+      78023,
+      78024,
+      78025,
+      78026,
+      78027,
+      78028,
+      78029
+    ],
+    "unit": "unique teacher-forcing sample_id",
+    "stratified_by": "target_position",
+    "same_shuffled_label_across_neural_seeds": true,
+    "true_final_labels_used_for_training": false
+  },
+  "results": [
+    {
+      "shuffle_seed": 78010,
+      "top1_accuracy": 0.5605263157894737,
+      "macro_f1": 0.48880445858986793,
+      "semantic_accuracy": 0.3375,
+      "semantic_macro_f1": 0.28762485780011
+    },
+    {
+      "shuffle_seed": 78011,
+      "top1_accuracy": 0.6302631578947369,
+      "macro_f1": 0.5621353843056142,
+      "semantic_accuracy": 0.41875,
+      "semantic_macro_f1": 0.384782029021853
+    },
+    {
+      "shuffle_seed": 78012,
+      "top1_accuracy": 0.625,
+      "macro_f1": 0.5477545965429462,
+      "semantic_accuracy": 0.425,
+      "semantic_macro_f1": 0.3556528569368097
+    },
+    {
+      "shuffle_seed": 78013,
+      "top1_accuracy": 0.5486842105263158,
+      "macro_f1": 0.45316944379221386,
+      "semantic_accuracy": 0.3145833333333333,
+      "semantic_macro_f1": 0.28655527633826694
+    },
+    {
+      "shuffle_seed": 78014,
+      "top1_accuracy": 0.5855263157894737,
+      "macro_f1": 0.5252704165786346,
+      "semantic_accuracy": 0.36041666666666666,
+      "semantic_macro_f1": 0.3187529564878443
+    },
+    {
+      "shuffle_seed": 78015,
+      "top1_accuracy": 0.6078947368421053,
+      "macro_f1": 0.5112138323831839,
+      "semantic_accuracy": 0.3958333333333333,
+      "semantic_macro_f1": 0.28927069332774524
+    },
+    {
+      "shuffle_seed": 78016,
+      "top1_accuracy": 0.5618421052631579,
+      "macro_f1": 0.466360595572083,
+      "semantic_accuracy": 0.325,
+      "semantic_macro_f1": 0.26987792410038447
+    },
+    {
+      "shuffle_seed": 78017,
+      "top1_accuracy": 0.5684210526315789,
+      "macro_f1": 0.4774571875826001,
+      "semantic_accuracy": 0.3375,
+      "semantic_macro_f1": 0.2649090975222314
+    },
+    {
+      "shuffle_seed": 78018,
+      "top1_accuracy": 0.5881578947368421,
+      "macro_f1": 0.523654717658652,
+      "semantic_accuracy": 0.3729166666666667,
+      "semantic_macro_f1": 0.34377853448899554
+    },
+    {
+      "shuffle_seed": 78019,
+      "top1_accuracy": 0.55,
+      "macro_f1": 0.4524777215800823,
+      "semantic_accuracy": 0.30625,
+      "semantic_macro_f1": 0.22529017526083128
+    },
+    {
+      "shuffle_seed": 78020,
+      "top1_accuracy": 0.49605263157894736,
+      "macro_f1": 0.4045331483016967,
+      "semantic_accuracy": 0.23958333333333334,
+      "semantic_macro_f1": 0.19630861307282013
+    },
+    {
+      "shuffle_seed": 78021,
+      "top1_accuracy": 0.5894736842105263,
+      "macro_f1": 0.5131870619298986,
+      "semantic_accuracy": 0.3958333333333333,
+      "semantic_macro_f1": 0.3424184308673919
+    },
+    {
+      "shuffle_seed": 78022,
+      "top1_accuracy": 0.5684210526315789,
+      "macro_f1": 0.47490747355347424,
+      "semantic_accuracy": 0.3333333333333333,
+      "semantic_macro_f1": 0.27266989618703663
+    },
+    {
+      "shuffle_seed": 78023,
+      "top1_accuracy": 0.5763157894736842,
+      "macro_f1": 0.49423394148758937,
+      "semantic_accuracy": 0.36875,
+      "semantic_macro_f1": 0.3206846868490836
+    },
+    {
+      "shuffle_seed": 78024,
+      "top1_accuracy": 0.5842105263157895,
+      "macro_f1": 0.4995358248647512,
+      "semantic_accuracy": 0.37083333333333335,
+      "semantic_macro_f1": 0.2969633729584151
+    },
+    {
+      "shuffle_seed": 78025,
+      "top1_accuracy": 0.5631578947368421,
+      "macro_f1": 0.46620793689565004,
+      "semantic_accuracy": 0.32916666666666666,
+      "semantic_macro_f1": 0.2776556777601632
+    },
+    {
+      "shuffle_seed": 78026,
+      "top1_accuracy": 0.5697368421052632,
+      "macro_f1": 0.5010322204499827,
+      "semantic_accuracy": 0.33125,
+      "semantic_macro_f1": 0.25762540153388175
+    },
+    {
+      "shuffle_seed": 78027,
+      "top1_accuracy": 0.6092105263157894,
+      "macro_f1": 0.5199245181909962,
+      "semantic_accuracy": 0.3854166666666667,
+      "semantic_macro_f1": 0.3025085028333598
+    },
+    {
+      "shuffle_seed": 78028,
+      "top1_accuracy": 0.5513157894736842,
+      "macro_f1": 0.47544358185371405,
+      "semantic_accuracy": 0.32916666666666666,
+      "semantic_macro_f1": 0.28703491691681704
+    },
+    {
+      "shuffle_seed": 78029,
+      "top1_accuracy": 0.575,
+      "macro_f1": 0.47303432528713507,
+      "semantic_accuracy": 0.3458333333333333,
+      "semantic_macro_f1": 0.27936491728711405
+    }
+  ],
+  "aggregate": {
+    "top1_accuracy": {
+      "mean": 0.5754605263157894,
+      "sd": 0.029266408731776463,
+      "min": 0.49605263157894736,
+      "max": 0.6302631578947369
+    },
+    "macro_f1": {
+      "mean": 0.4915169193700383,
+      "sd": 0.03540026614957791,
+      "min": 0.4045331483016967,
+      "max": 0.5621353843056142
+    },
+    "semantic_accuracy": {
+      "mean": 0.3511458333333334,
+      "sd": 0.0418406523726892,
+      "min": 0.23958333333333334,
+      "max": 0.425
+    },
+    "semantic_macro_f1": {
+      "mean": 0.2929864408775577,
+      "sd": 0.04264344299455306,
+      "min": 0.19630861307282013,
+      "max": 0.384782029021853
+    }
+  },
+  "real_malecns_final": {
+    "top1_accuracy": 0.7618421052631579,
+    "top2_accuracy": 0.9355263157894737,
+    "top3_accuracy": 0.975,
+    "macro_f1": 0.6998749009112939,
+    "semantic_positions": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "semantic_accuracy": 0.6333333333333333,
+    "semantic_macro_f1": 0.6392009393750804
+  },
+  "integrity": {
+    "protocol_sha256": "a1715f2bd161aa94dfb9623b24455372044faf5953b6c9db57cc43f33ffd9af6",
+    "refit_manifest_sha256": "e29283c9492c5225ebac09876bfb4c26161405c302906d534a612acbe095b569",
+    "train_feature_sha256": "eb44df5c013dd82ad8ffad94f0450670d262fc17dbaa6327ca62d80f01677552",
+    "validation_feature_sha256": "b4d95f13a78e15b1addb9bd3f0256e24867db27425a922ae58c1507059efc4a8",
+    "development_test_feature_sha256": "d773ef3ff8ed8b2f598e754893fbffd2a8986846e11b2ecba7bb0c177cc5d8bf",
+    "final_feature_sha256": "9a48b48bfdac4c0b0eda840047a2567012082fbc3ad5c85a46ee5574bbce7d7a"
+  },
+  "rules": [
+    "The real MaleCNS feature extractor and frozen Step-62 decoder configuration were kept fixed.",
+    "Only development labels were shuffled.",
+    "The final holdout was never used for hyperparameter or architecture selection.",
+    "Labels were shuffled within output position to preserve fixed-syntax position structure.",
+    "Repeated neural seeds of the same logical teacher-forcing sample received the same shuffled target."
+  ]
+}

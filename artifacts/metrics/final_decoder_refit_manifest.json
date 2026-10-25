@@ -1,0 +1,73 @@
+{
+  "step": "77B",
+  "created_at_utc": "2026-10-24T23:22:34.980507+00:00",
+  "status": "FROZEN_DECODER_REFIT_COMPLETE",
+  "model_file": "artifacts\\models\\generator_final_frozen_decoder.joblib",
+  "model_sha256": "857468c43e64dfca2394432459e695e4da58f60e5c4d2b50164df01533ee8411",
+  "protocol_file": "artifacts\\metrics\\final_evaluation_protocol.json",
+  "protocol_sha256": "a1715f2bd161aa94dfb9623b24455372044faf5953b6c9db57cc43f33ffd9af6",
+  "final_holdout_sha256": "e2845e8aa6ae02e121c13eb1faace46c2788ebd372e14d0efb90b2c3a433317c",
+  "selected_family": "Balanced Logistic",
+  "selected_configuration": "Balanced Logistic PCA=100 C=0.1",
+  "pipeline": {
+    "scaler": "StandardScaler",
+    "pca_components": 100,
+    "pca_solver": "randomized",
+    "pca_random_state": 42,
+    "classifier": "LogisticRegression",
+    "C": 0.1,
+    "solver": "lbfgs",
+    "class_weight": "balanced",
+    "max_iter": 5000,
+    "classifier_random_state": 42
+  },
+  "development_refit": {
+    "logical_prompts": 48,
+    "neural_rows": 1520,
+    "feature_dimensions": 41111,
+    "neural_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "target_classes": [
+      "ASSIGN",
+      "DIVIDE",
+      "EOS",
+      "MINUS",
+      "NAME_A",
+      "NAME_B",
+      "NAME_X",
+      "NAME_Y",
+      "NEWLINE"
+    ],
+    "target_distribution": {
+      "ASSIGN": 240,
+      "DIVIDE": 80,
+      "EOS": 240,
+      "MINUS": 80,
+      "NAME_A": 240,
+      "NAME_B": 160,
+      "NAME_X": 80,
+      "NAME_Y": 160,
+      "NEWLINE": 240
+    }
+  },
+  "development_history": {
+    "original_selected_validation_accuracy": 0.7263157894736842,
+    "original_selected_validation_macro_f1": 0.6347099006497117,
+    "development_diagnostic_test_top1": 0.7789473684210526,
+    "development_diagnostic_test_macro_f1": 0.7119017706082382,
+    "development_diagnostic_semantic_accuracy": 0.65
+  },
+  "training_sanity_accuracy_not_final_metric": 0.8480263157894737,
+  "rules": [
+    "No final-holdout labels were used for model selection.",
+    "No decoder family search was performed in Step 77B.",
+    "No hyperparameter search was performed in Step 77B.",
+    "The selected Step-62 architecture and decoder were frozen before this refit.",
+    "The final holdout must not be used to retune architecture or hyperparameters after scoring."
+  ]
+}

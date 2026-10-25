@@ -1,0 +1,3969 @@
+{
+  "total_episodes": 30,
+  "mean_token_accuracy": 0.485714285714286,
+  "exact_program_accuracy": 0.0,
+  "valid_program_rate": 0.03333333333333333,
+  "eos_completion_rate": 1.0,
+  "max_generation_steps": 10,
+  "neural_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "accuracy_by_prompt": {
+    "copy_a_x_02": {
+      "exact_accuracy": 0.0,
+      "valid_rate": 0.0,
+      "mean_token_accuracy": 0.8
+    },
+    "copy_x_a_02": {
+      "exact_accuracy": 0.0,
+      "valid_rate": 0.0,
+      "mean_token_accuracy": 0.6
+    },
+    "div_ab_01": {
+      "exact_accuracy": 0.0,
+      "valid_rate": 0.0,
+      "mean_token_accuracy": 0.42857142857142855
+    },
+    "div_ba_04": {
+      "exact_accuracy": 0.0,
+      "valid_rate": 0.0,
+      "mean_token_accuracy": 0.2857142857142857
+    },
+    "sub_ab_05": {
+      "exact_accuracy": 0.0,
+      "valid_rate": 0.2,
+      "mean_token_accuracy": 0.5142857142857142
+    },
+    "sub_ba_03": {
+      "exact_accuracy": 0.0,
+      "valid_rate": 0.0,
+      "mean_token_accuracy": 0.2857142857142857
+    }
+  },
+  "episodes": [
+    {
+      "example_id": "copy_a_x_02",
+      "intent": "copy_a_x",
+      "seed": 0,
+      "prompt_tokens": [
+        "put",
+        "a",
+        "in",
+        "x"
+      ],
+      "target_code": "x = a",
+      "target_tokens": [
+        "NAME_X",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.8,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.2333713173866272
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6469820737838745
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6554058194160461
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.8455996513366699
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.9124137163162231
+            },
+            {
+              "token": "NAME_Y",
+              "score": -0.9272905588150024
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.11236202716827393
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.43471968173980713
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6774715185165405
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.3318607807159424
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.45229318737983704
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5166869163513184
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.25587305426597595
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.3520874083042145
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.3751056492328644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "copy_a_x_02",
+      "intent": "copy_a_x",
+      "seed": 1,
+      "prompt_tokens": [
+        "put",
+        "a",
+        "in",
+        "x"
+      ],
+      "target_code": "x = a",
+      "target_tokens": [
+        "NAME_X",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.8,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.2031378149986267
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.638841986656189
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6627581715583801
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.9825551509857178
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8817424178123474
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.9002254605293274
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.058177649974823
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.3699430227279663
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.7139608860015869
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.41881421208381653
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.4433753490447998
+            },
+            {
+              "token": "MINUS",
+              "score": -0.48797357082366943
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.15189290046691895
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.37402018904685974
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.38632720708847046
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "copy_a_x_02",
+      "intent": "copy_a_x",
+      "seed": 2,
+      "prompt_tokens": [
+        "put",
+        "a",
+        "in",
+        "x"
+      ],
+      "target_code": "x = a",
+      "target_tokens": [
+        "NAME_X",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.8,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.13864243030548096
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.650139331817627
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6522069573402405
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.8762449026107788
+            },
+            {
+              "token": "NEWLINE",
+              "score": -0.858034074306488
+            },
+            {
+              "token": "EOS",
+              "score": -0.9674668908119202
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.13065063953399658
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.44021865725517273
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6644049882888794
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.22600755095481873
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.4409586489200592
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5170978307723999
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.1511756181716919
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.3753034174442291
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4260782301425934
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "copy_a_x_02",
+      "intent": "copy_a_x",
+      "seed": 3,
+      "prompt_tokens": [
+        "put",
+        "a",
+        "in",
+        "x"
+      ],
+      "target_code": "x = a",
+      "target_tokens": [
+        "NAME_X",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.8,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.19238394498825073
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.5971988439559937
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6001861095428467
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.9508705139160156
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.9141483902931213
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.9378107786178589
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.08781850337982178
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.46425125002861023
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6267401576042175
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.30755114555358887
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.49854981899261475
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5255277156829834
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.18952816724777222
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.41718825697898865
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4470405578613281
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "copy_a_x_02",
+      "intent": "copy_a_x",
+      "seed": 4,
+      "prompt_tokens": [
+        "put",
+        "a",
+        "in",
+        "x"
+      ],
+      "target_code": "x = a",
+      "target_tokens": [
+        "NAME_X",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.8,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.1860787272453308
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.586625337600708
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6426677703857422
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.7039422988891602
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.8954975008964539
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.9333539009094238
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.10701584815979004
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.44150620698928833
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6826233267784119
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.19858163595199585
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.3931315541267395
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5062069296836853
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.15938657522201538
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.42215394973754883
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.46102285385131836
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "copy_x_a_02",
+      "intent": "copy_x_a",
+      "seed": 0,
+      "prompt_tokens": [
+        "put",
+        "x",
+        "in",
+        "a"
+      ],
+      "target_code": "a = x",
+      "target_tokens": [
+        "NAME_A",
+        "ASSIGN",
+        "NAME_X",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.6,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.23708826303482056
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.627396821975708
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6685125231742859
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.6245101690292358
+            },
+            {
+              "token": "NAME_Y",
+              "score": -0.8982591032981873
+            },
+            {
+              "token": "NEWLINE",
+              "score": -0.9142870306968689
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.08589303493499756
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.44347643852233887
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6645045280456543
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.18633833527565002
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.3539752960205078
+            },
+            {
+              "token": "MINUS",
+              "score": -0.49928396940231323
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.246170312166214
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.459699809551239
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.48038557171821594
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "copy_x_a_02",
+      "intent": "copy_x_a",
+      "seed": 1,
+      "prompt_tokens": [
+        "put",
+        "x",
+        "in",
+        "a"
+      ],
+      "target_code": "a = x",
+      "target_tokens": [
+        "NAME_A",
+        "ASSIGN",
+        "NAME_X",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.6,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.31136876344680786
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6012470126152039
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6865999698638916
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.8962810039520264
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8228501677513123
+            },
+            {
+              "token": "NAME_Y",
+              "score": -0.8931344747543335
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.10104405879974365
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.35330888628959656
+            },
+            {
+              "token": "NAME_Y",
+              "score": -0.6881685853004456
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.30617085099220276
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.41925033926963806
+            },
+            {
+              "token": "MINUS",
+              "score": -0.42837825417518616
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.1938229203224182
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.36814188957214355
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.4172169268131256
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "copy_x_a_02",
+      "intent": "copy_x_a",
+      "seed": 2,
+      "prompt_tokens": [
+        "put",
+        "x",
+        "in",
+        "a"
+      ],
+      "target_code": "a = x",
+      "target_tokens": [
+        "NAME_A",
+        "ASSIGN",
+        "NAME_X",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.6,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.1857818365097046
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6448339223861694
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6706486940383911
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.9351290464401245
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.9125196933746338
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.9438930749893188
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.12231564521789551
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4409443736076355
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6969171762466431
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.35064244270324707
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.46716031432151794
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5306611061096191
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.1176447868347168
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.3815987706184387
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.38717663288116455
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "copy_x_a_02",
+      "intent": "copy_x_a",
+      "seed": 3,
+      "prompt_tokens": [
+        "put",
+        "x",
+        "in",
+        "a"
+      ],
+      "target_code": "a = x",
+      "target_tokens": [
+        "NAME_A",
+        "ASSIGN",
+        "NAME_X",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.6,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.2062699794769287
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.582231879234314
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6339098215103149
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.8056387901306152
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.8793320655822754
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8906657695770264
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.07551264762878418
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4546527862548828
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6533641815185547
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.2726564407348633
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.42908480763435364
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5287927389144897
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.21996748447418213
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.42738378047943115
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.46344229578971863
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "copy_x_a_02",
+      "intent": "copy_x_a",
+      "seed": 4,
+      "prompt_tokens": [
+        "put",
+        "x",
+        "in",
+        "a"
+      ],
+      "target_code": "a = x",
+      "target_tokens": [
+        "NAME_A",
+        "ASSIGN",
+        "NAME_X",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.6,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.1935211420059204
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.5740790367126465
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6329495906829834
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.8604353666305542
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.866184651851654
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8726344704627991
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.04494142532348633
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.34845292568206787
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6939913630485535
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.30782610177993774
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.4597640335559845
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5633781552314758
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.18236690759658813
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.39958658814430237
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.40472158789634705
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "div_ab_01",
+      "intent": "div_ab",
+      "seed": 0,
+      "prompt_tokens": [
+        "divide",
+        "a",
+        "by",
+        "b"
+      ],
+      "target_code": "y = a / b",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "DIVIDE",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.42857142857142855,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.13789606094360352
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6391336917877197
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.702648401260376
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.9547582864761353
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8547562956809998
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.9429298639297485
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.12334895133972168
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4067532420158386
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.7103053331375122
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.397816926240921
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.4694184362888336
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5381126403808594
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.2600577771663666
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.4329526424407959
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.43473440408706665
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "div_ab_01",
+      "intent": "div_ab",
+      "seed": 1,
+      "prompt_tokens": [
+        "divide",
+        "a",
+        "by",
+        "b"
+      ],
+      "target_code": "y = a / b",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "DIVIDE",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.42857142857142855,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.3554531931877136
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6315479278564453
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.7423112988471985
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.9106020927429199
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.8829377293586731
+            },
+            {
+              "token": "NAME_Y",
+              "score": -0.8850427269935608
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.06460946798324585
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.39818859100341797
+            },
+            {
+              "token": "NAME_Y",
+              "score": -0.7263443470001221
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.3160414397716522
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.36128270626068115
+            },
+            {
+              "token": "MINUS",
+              "score": -0.533883810043335
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.2329126000404358
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.4003027677536011
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.41800349950790405
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "div_ab_01",
+      "intent": "div_ab",
+      "seed": 2,
+      "prompt_tokens": [
+        "divide",
+        "a",
+        "by",
+        "b"
+      ],
+      "target_code": "y = a / b",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "DIVIDE",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.42857142857142855,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.30445605516433716
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6222195625305176
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6729050278663635
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.8404276371002197
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8884013891220093
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.903640866279602
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.13599765300750732
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4568334221839905
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6723374724388123
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.19575423002243042
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.37217438220977783
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5244895219802856
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.2006097435951233
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4156525433063507
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.41881221532821655
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "div_ab_01",
+      "intent": "div_ab",
+      "seed": 3,
+      "prompt_tokens": [
+        "divide",
+        "a",
+        "by",
+        "b"
+      ],
+      "target_code": "y = a / b",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "DIVIDE",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.42857142857142855,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.2619324326515198
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.5930761694908142
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6605621576309204
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.8306641578674316
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.8961392641067505
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.9265533685684204
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.13456666469573975
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4434317350387573
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.7023463249206543
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.31945955753326416
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.3965683579444885
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5518887042999268
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.17524343729019165
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.37150838971138
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.3980262875556946
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "div_ab_01",
+      "intent": "div_ab",
+      "seed": 4,
+      "prompt_tokens": [
+        "divide",
+        "a",
+        "by",
+        "b"
+      ],
+      "target_code": "y = a / b",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "DIVIDE",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.42857142857142855,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.27146512269973755
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.7043501734733582
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.7264644503593445
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.7302671670913696
+            },
+            {
+              "token": "NAME_Y",
+              "score": -0.8310607671737671
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8736793398857117
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.12585848569869995
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.40152573585510254
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.7340399026870728
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.3040209412574768
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.3872857093811035
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5296633243560791
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.18496325612068176
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.427846759557724
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.4463418126106262
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "div_ba_04",
+      "intent": "div_ba",
+      "seed": 0,
+      "prompt_tokens": [
+        "ratio",
+        "b",
+        "over",
+        "a"
+      ],
+      "target_code": "y = b / a",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "DIVIDE",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.2857142857142857,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.13601642847061157
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6023702025413513
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6472018957138062
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.7907220125198364
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8881446719169617
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.8943020701408386
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.1652146577835083
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.49700430035591125
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6979547142982483
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.2518156170845032
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.343317449092865
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5509976744651794
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.16106873750686646
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.46956759691238403
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.5077672004699707
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "div_ba_04",
+      "intent": "div_ba",
+      "seed": 1,
+      "prompt_tokens": [
+        "ratio",
+        "b",
+        "over",
+        "a"
+      ],
+      "target_code": "y = b / a",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "DIVIDE",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.2857142857142857,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.07914227247238159
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6676307916641235
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.668222188949585
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 1.0291575193405151
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.9183353185653687
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.9483361840248108
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.13609164953231812
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.5029237866401672
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6675946712493896
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.3391789197921753
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.44136086106300354
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5910906791687012
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.18619796633720398
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.38143056631088257
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4484274685382843
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "div_ba_04",
+      "intent": "div_ba",
+      "seed": 2,
+      "prompt_tokens": [
+        "ratio",
+        "b",
+        "over",
+        "a"
+      ],
+      "target_code": "y = b / a",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "DIVIDE",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.2857142857142857,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.19013893604278564
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6451470851898193
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.678321361541748
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.9717187881469727
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8930690288543701
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.9300446510314941
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.1561793088912964
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4180905520915985
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.7428072094917297
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.2560471296310425
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.4139775335788727
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5443310737609863
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.18213003873825073
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4128273129463196
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.4451838731765747
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "div_ba_04",
+      "intent": "div_ba",
+      "seed": 3,
+      "prompt_tokens": [
+        "ratio",
+        "b",
+        "over",
+        "a"
+      ],
+      "target_code": "y = b / a",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "DIVIDE",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.2857142857142857,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.17760014533996582
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6145679950714111
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6306761503219604
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.8198422193527222
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8981479406356812
+            },
+            {
+              "token": "NAME_Y",
+              "score": -0.9012585878372192
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.12702274322509766
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4481962025165558
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6900041103363037
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.2441404163837433
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.38299405574798584
+            },
+            {
+              "token": "MINUS",
+              "score": -0.48392897844314575
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.2775290012359619
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.47705045342445374
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.48281002044677734
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "div_ba_04",
+      "intent": "div_ba",
+      "seed": 4,
+      "prompt_tokens": [
+        "ratio",
+        "b",
+        "over",
+        "a"
+      ],
+      "target_code": "y = b / a",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "DIVIDE",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.2857142857142857,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.17180263996124268
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6122725605964661
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6199506521224976
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.7860002517700195
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.9154151082038879
+            },
+            {
+              "token": "NEWLINE",
+              "score": -0.920375406742096
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.13251900672912598
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.46678078174591064
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.68411785364151
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.1587963104248047
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.36782991886138916
+            },
+            {
+              "token": "MINUS",
+              "score": -0.49118658900260925
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.27067968249320984
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.5040663480758667
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.5062762498855591
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "sub_ab_05",
+      "intent": "sub_ab",
+      "seed": 0,
+      "prompt_tokens": [
+        "calculate",
+        "a",
+        "minus",
+        "b"
+      ],
+      "target_code": "y = a - b",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "MINUS",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "DIVIDE",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": "y = a / b",
+      "valid_program": true,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.8571428571428571,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.3779304623603821
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.5991782546043396
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.7604249715805054
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.9124768972396851
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8226729035377502
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.8557615280151367
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.10666912794113159
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.37051358819007874
+            },
+            {
+              "token": "NAME_Y",
+              "score": -0.7236615419387817
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "DIVIDE",
+          "top3": [
+            {
+              "token": "DIVIDE",
+              "score": -0.2817170023918152
+            },
+            {
+              "token": "NEWLINE",
+              "score": -0.3587116599082947
+            },
+            {
+              "token": "MINUS",
+              "score": -0.4883233606815338
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "DIVIDE",
+          "prediction": "NAME_B",
+          "top3": [
+            {
+              "token": "NAME_B",
+              "score": -0.3723480701446533
+            },
+            {
+              "token": "EOS",
+              "score": -0.42394378781318665
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.4509139955043793
+            }
+          ]
+        },
+        {
+          "step": 5,
+          "feedback": "NAME_B",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": 0.5425539016723633
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.7933174967765808
+            },
+            {
+              "token": "EOS",
+              "score": -0.918137788772583
+            }
+          ]
+        },
+        {
+          "step": 6,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": 0.6051074266433716
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.8416181802749634
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.8647013306617737
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "sub_ab_05",
+      "intent": "sub_ab",
+      "seed": 1,
+      "prompt_tokens": [
+        "calculate",
+        "a",
+        "minus",
+        "b"
+      ],
+      "target_code": "y = a - b",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "MINUS",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "DIVIDE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.42857142857142855,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.30840831995010376
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6479055285453796
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.7194527983665466
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.6772947311401367
+            },
+            {
+              "token": "NAME_Y",
+              "score": -0.8302772641181946
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8595319986343384
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.13597214221954346
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4078998267650604
+            },
+            {
+              "token": "NAME_Y",
+              "score": -0.7467631697654724
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "DIVIDE",
+          "top3": [
+            {
+              "token": "DIVIDE",
+              "score": -0.3807755708694458
+            },
+            {
+              "token": "NEWLINE",
+              "score": -0.4240342080593109
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5693355798721313
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "DIVIDE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.18330854177474976
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.3122555911540985
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.36501964926719666
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "sub_ab_05",
+      "intent": "sub_ab",
+      "seed": 2,
+      "prompt_tokens": [
+        "calculate",
+        "a",
+        "minus",
+        "b"
+      ],
+      "target_code": "y = a - b",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "MINUS",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.42857142857142855,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.3004280924797058
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6390470266342163
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.728994607925415
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.9461278915405273
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8767227530479431
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.915554404258728
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.06363445520401001
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.3614596128463745
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.707588255405426
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.35157909989356995
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.3526931405067444
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5011075139045715
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.23261535167694092
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.3945166766643524
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.42518702149391174
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "sub_ab_05",
+      "intent": "sub_ab",
+      "seed": 3,
+      "prompt_tokens": [
+        "calculate",
+        "a",
+        "minus",
+        "b"
+      ],
+      "target_code": "y = a - b",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "MINUS",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.42857142857142855,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.20796632766723633
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6210917830467224
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6316449642181396
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.8384108543395996
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.9204922318458557
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.9288166761398315
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.10024750232696533
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4583243131637573
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6692327857017517
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.12635838985443115
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.3938303589820862
+            },
+            {
+              "token": "MINUS",
+              "score": -0.4663541316986084
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.21149152517318726
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4002229571342468
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.4114131033420563
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "sub_ab_05",
+      "intent": "sub_ab",
+      "seed": 4,
+      "prompt_tokens": [
+        "calculate",
+        "a",
+        "minus",
+        "b"
+      ],
+      "target_code": "y = a - b",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "MINUS",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.42857142857142855,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.25357145071029663
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6057196259498596
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6603771448135376
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.8547794818878174
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.8778867125511169
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.9371283650398254
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.08254492282867432
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.440683513879776
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6983123421669006
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.326742559671402
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.4157790541648865
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5435664653778076
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.2713708281517029
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.41514214873313904
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.4217889606952667
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "sub_ba_03",
+      "intent": "sub_ba",
+      "seed": 0,
+      "prompt_tokens": [
+        "remove",
+        "a",
+        "from",
+        "b"
+      ],
+      "target_code": "y = b - a",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "MINUS",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.2857142857142857,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.2145431637763977
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.586534857749939
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6358246803283691
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.8760279417037964
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.9060252904891968
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.933339536190033
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.15976881980895996
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.49861645698547363
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6808660626411438
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.21221661567687988
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.4745320975780487
+            },
+            {
+              "token": "MINUS",
+              "score": -0.4792958199977875
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.2212890088558197
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.4754561185836792
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4775451719760895
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "sub_ba_03",
+      "intent": "sub_ba",
+      "seed": 1,
+      "prompt_tokens": [
+        "remove",
+        "a",
+        "from",
+        "b"
+      ],
+      "target_code": "y = b - a",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "MINUS",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.2857142857142857,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.11277145147323608
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6530396938323975
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.653710126876831
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.860693097114563
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8812425136566162
+            },
+            {
+              "token": "MINUS",
+              "score": -0.9428088068962097
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.11894392967224121
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.41191092133522034
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.7009554505348206
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.26817119121551514
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.38566523790359497
+            },
+            {
+              "token": "MINUS",
+              "score": -0.48903924226760864
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.20470446348190308
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.4514780640602112
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.45641010999679565
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "sub_ba_03",
+      "intent": "sub_ba",
+      "seed": 2,
+      "prompt_tokens": [
+        "remove",
+        "a",
+        "from",
+        "b"
+      ],
+      "target_code": "y = b - a",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "MINUS",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.2857142857142857,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.1699715256690979
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.5646815299987793
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6939800977706909
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.8713864088058472
+            },
+            {
+              "token": "EOS",
+              "score": -0.9437512159347534
+            },
+            {
+              "token": "NEWLINE",
+              "score": -0.9500547051429749
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.16074180603027344
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.43768659234046936
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6552229523658752
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.15094774961471558
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.41557255387306213
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5206007957458496
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.15600955486297607
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.39632710814476013
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.40731972455978394
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "sub_ba_03",
+      "intent": "sub_ba",
+      "seed": 3,
+      "prompt_tokens": [
+        "remove",
+        "a",
+        "from",
+        "b"
+      ],
+      "target_code": "y = b - a",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "MINUS",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.2857142857142857,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.21384233236312866
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.5979176759719849
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6421862840652466
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.9911444187164307
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.8916481733322144
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.9448918104171753
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.1092105507850647
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4430842995643616
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6612021923065186
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.24467554688453674
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.42113956809043884
+            },
+            {
+              "token": "MINUS",
+              "score": -0.5027613639831543
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.22212690114974976
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.484624445438385
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.4943324327468872
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "sub_ba_03",
+      "intent": "sub_ba",
+      "seed": 4,
+      "prompt_tokens": [
+        "remove",
+        "a",
+        "from",
+        "b"
+      ],
+      "target_code": "y = b - a",
+      "target_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "MINUS",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "generated_code": null,
+      "valid_program": false,
+      "exact_program": false,
+      "produced_eos": true,
+      "token_accuracy": 0.2857142857142857,
+      "generation_trace": [
+        {
+          "step": 0,
+          "feedback": "BOS",
+          "prediction": "NAME_Y",
+          "top3": [
+            {
+              "token": "NAME_Y",
+              "score": 0.17146271467208862
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.5989406704902649
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.6772421002388
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "feedback": "NAME_Y",
+          "prediction": "ASSIGN",
+          "top3": [
+            {
+              "token": "ASSIGN",
+              "score": 0.8887815475463867
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.9036411046981812
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.9579387903213501
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "feedback": "ASSIGN",
+          "prediction": "NAME_A",
+          "top3": [
+            {
+              "token": "NAME_A",
+              "score": -0.09792488813400269
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4562690854072571
+            },
+            {
+              "token": "NAME_X",
+              "score": -0.6596049666404724
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "feedback": "NAME_A",
+          "prediction": "NEWLINE",
+          "top3": [
+            {
+              "token": "NEWLINE",
+              "score": -0.1755669116973877
+            },
+            {
+              "token": "DIVIDE",
+              "score": -0.4213407039642334
+            },
+            {
+              "token": "MINUS",
+              "score": -0.51201331615448
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "feedback": "NEWLINE",
+          "prediction": "EOS",
+          "top3": [
+            {
+              "token": "EOS",
+              "score": -0.18835008144378662
+            },
+            {
+              "token": "NAME_A",
+              "score": -0.4553147852420807
+            },
+            {
+              "token": "NAME_B",
+              "score": -0.4644896984100342
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

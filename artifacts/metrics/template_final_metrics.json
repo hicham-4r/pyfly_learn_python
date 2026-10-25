@@ -1,0 +1,19 @@
+{
+  "chance_accuracy": 0.16666666666666666,
+  "validation_accuracy": 0.4,
+  "test_accuracy": 0.5,
+  "test_macro_f1": 0.3333333333333333,
+  "pca_components": 20,
+  "ridge_alpha": 0.001,
+  "classes": [
+    "add",
+    "print_hello",
+    "print_x",
+    "set_x_one",
+    "set_x_zero",
+    "subtract"
+  ],
+  "train_episodes": 180,
+  "validation_episodes": 30,
+  "test_episodes": 30
+}

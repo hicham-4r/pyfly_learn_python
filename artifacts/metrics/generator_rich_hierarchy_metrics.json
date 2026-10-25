@@ -1,0 +1,42 @@
+{
+  "rich_family_gate": {
+    "accuracy": 0.6333333333333333,
+    "macro_f1": 0.6190849673202615
+  },
+  "global_decoder": {
+    "accuracy": 0.7789473684210526,
+    "macro_f1": 0.7119017706082382,
+    "semantic_accuracy": 0.65,
+    "semantic_macro_f1": 0.6059039219486981
+  },
+  "oracle_hierarchy": {
+    "accuracy": 0.8421052631578947,
+    "macro_f1": 0.8474747474747475,
+    "semantic_accuracy": 0.75,
+    "semantic_macro_f1": 0.8284090909090909
+  },
+  "rich_predicted_hierarchy": {
+    "accuracy": 0.7368421052631579,
+    "macro_f1": 0.6959493894668641,
+    "semantic_accuracy": 0.5833333333333334,
+    "semantic_macro_f1": 0.600471798782406
+  },
+  "accuracy_by_position": {
+    "0": 0.7333333333333333,
+    "1": 1.0,
+    "2": 0.43333333333333335,
+    "3": 0.6333333333333333,
+    "4": 0.5333333333333333,
+    "5": 1.0,
+    "6": 1.0
+  },
+  "oracle_fallbacks": 0,
+  "rich_fallbacks": 4,
+  "token_accuracy_when_family_correct": 0.8429752066115702,
+  "token_accuracy_when_family_wrong": 0.5507246376811594,
+  "old_predicted_hierarchy": {
+    "accuracy": 0.6736842105263158,
+    "macro_f1": 0.5892745331341822,
+    "semantic_accuracy": 0.48333333333333334
+  }
+}

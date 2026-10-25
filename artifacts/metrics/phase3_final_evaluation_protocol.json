@@ -1,0 +1,364 @@
+{
+  "phase": 3,
+  "step": "82",
+  "created_at_utc": "2026-10-25T01:41:05.216997+00:00",
+  "status": "FROZEN_BEFORE_PHASE3_FINAL_EVALUATION",
+  "holdout_type": "fresh compositional logical-prompt holdout",
+  "holdout_seed": 82001,
+  "holdout_prompts": 24,
+  "prompts_per_intent": 4,
+  "intents": [
+    "copy_a_x",
+    "copy_x_a",
+    "div_ab",
+    "div_ba",
+    "sub_ab",
+    "sub_ba"
+  ],
+  "construction": "For each intent, take the observed token options at each prompt position across all development prompts, enumerate position-wise combinations, reject every complete prompt already used in train/validation/test, then sample four unseen combinations deterministically.",
+  "generation_diagnostics": {
+    "copy_a_x": {
+      "template_count": 1,
+      "total_unseen_candidates": 112,
+      "selected": 4,
+      "templates": [
+        {
+          "template_index": 0,
+          "prompt_length": 4,
+          "target_tokens": [
+            "NAME_X",
+            "ASSIGN",
+            "NAME_A",
+            "NEWLINE",
+            "EOS"
+          ],
+          "position_option_counts": [
+            8,
+            2,
+            4,
+            2
+          ],
+          "cartesian_combinations": 128,
+          "unseen_candidates": 112,
+          "selected": 4
+        }
+      ]
+    },
+    "copy_x_a": {
+      "template_count": 1,
+      "total_unseen_candidates": 112,
+      "selected": 4,
+      "templates": [
+        {
+          "template_index": 0,
+          "prompt_length": 4,
+          "target_tokens": [
+            "NAME_A",
+            "ASSIGN",
+            "NAME_X",
+            "NEWLINE",
+            "EOS"
+          ],
+          "position_option_counts": [
+            8,
+            2,
+            4,
+            2
+          ],
+          "cartesian_combinations": 128,
+          "unseen_candidates": 112,
+          "selected": 4
+        }
+      ]
+    },
+    "div_ab": {
+      "template_count": 2,
+      "total_unseen_candidates": 35,
+      "selected": 4,
+      "templates": [
+        {
+          "template_index": 0,
+          "prompt_length": 4,
+          "target_tokens": [
+            "NAME_Y",
+            "ASSIGN",
+            "NAME_A",
+            "DIVIDE",
+            "NAME_B",
+            "NEWLINE",
+            "EOS"
+          ],
+          "position_option_counts": [
+            7,
+            2,
+            3,
+            1
+          ],
+          "cartesian_combinations": 42,
+          "unseen_candidates": 35,
+          "selected": 4
+        },
+        {
+          "template_index": 1,
+          "prompt_length": 6,
+          "target_tokens": [
+            "NAME_Y",
+            "ASSIGN",
+            "NAME_A",
+            "DIVIDE",
+            "NAME_B",
+            "NEWLINE",
+            "EOS"
+          ],
+          "position_option_counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cartesian_combinations": 1,
+          "unseen_candidates": 0,
+          "selected": 0
+        }
+      ]
+    },
+    "div_ba": {
+      "template_count": 2,
+      "total_unseen_candidates": 35,
+      "selected": 4,
+      "templates": [
+        {
+          "template_index": 0,
+          "prompt_length": 4,
+          "target_tokens": [
+            "NAME_Y",
+            "ASSIGN",
+            "NAME_B",
+            "DIVIDE",
+            "NAME_A",
+            "NEWLINE",
+            "EOS"
+          ],
+          "position_option_counts": [
+            7,
+            2,
+            3,
+            1
+          ],
+          "cartesian_combinations": 42,
+          "unseen_candidates": 35,
+          "selected": 4
+        },
+        {
+          "template_index": 1,
+          "prompt_length": 6,
+          "target_tokens": [
+            "NAME_Y",
+            "ASSIGN",
+            "NAME_B",
+            "DIVIDE",
+            "NAME_A",
+            "NEWLINE",
+            "EOS"
+          ],
+          "position_option_counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cartesian_combinations": 1,
+          "unseen_candidates": 0,
+          "selected": 0
+        }
+      ]
+    },
+    "sub_ab": {
+      "template_count": 3,
+      "total_unseen_candidates": 36,
+      "selected": 4,
+      "templates": [
+        {
+          "template_index": 0,
+          "prompt_length": 3,
+          "target_tokens": [
+            "NAME_Y",
+            "ASSIGN",
+            "NAME_A",
+            "MINUS",
+            "NAME_B",
+            "NEWLINE",
+            "EOS"
+          ],
+          "position_option_counts": [
+            1,
+            1,
+            1
+          ],
+          "cartesian_combinations": 1,
+          "unseen_candidates": 0,
+          "selected": 0
+        },
+        {
+          "template_index": 1,
+          "prompt_length": 4,
+          "target_tokens": [
+            "NAME_Y",
+            "ASSIGN",
+            "NAME_A",
+            "MINUS",
+            "NAME_B",
+            "NEWLINE",
+            "EOS"
+          ],
+          "position_option_counts": [
+            6,
+            2,
+            2,
+            2
+          ],
+          "cartesian_combinations": 48,
+          "unseen_candidates": 36,
+          "selected": 4
+        },
+        {
+          "template_index": 2,
+          "prompt_length": 6,
+          "target_tokens": [
+            "NAME_Y",
+            "ASSIGN",
+            "NAME_A",
+            "MINUS",
+            "NAME_B",
+            "NEWLINE",
+            "EOS"
+          ],
+          "position_option_counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cartesian_combinations": 1,
+          "unseen_candidates": 0,
+          "selected": 0
+        }
+      ]
+    },
+    "sub_ba": {
+      "template_count": 3,
+      "total_unseen_candidates": 36,
+      "selected": 4,
+      "templates": [
+        {
+          "template_index": 0,
+          "prompt_length": 3,
+          "target_tokens": [
+            "NAME_Y",
+            "ASSIGN",
+            "NAME_B",
+            "MINUS",
+            "NAME_A",
+            "NEWLINE",
+            "EOS"
+          ],
+          "position_option_counts": [
+            1,
+            1,
+            1
+          ],
+          "cartesian_combinations": 1,
+          "unseen_candidates": 0,
+          "selected": 0
+        },
+        {
+          "template_index": 1,
+          "prompt_length": 4,
+          "target_tokens": [
+            "NAME_Y",
+            "ASSIGN",
+            "NAME_B",
+            "MINUS",
+            "NAME_A",
+            "NEWLINE",
+            "EOS"
+          ],
+          "position_option_counts": [
+            6,
+            2,
+            2,
+            2
+          ],
+          "cartesian_combinations": 48,
+          "unseen_candidates": 36,
+          "selected": 4
+        },
+        {
+          "template_index": 2,
+          "prompt_length": 6,
+          "target_tokens": [
+            "NAME_Y",
+            "ASSIGN",
+            "NAME_B",
+            "MINUS",
+            "NAME_A",
+            "NEWLINE",
+            "EOS"
+          ],
+          "position_option_counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cartesian_combinations": 1,
+          "unseen_candidates": 0,
+          "selected": 0
+        }
+      ]
+    }
+  },
+  "development_prompt_overlap": 0,
+  "global_exact_prompt_overlap": 0,
+  "scoring_performed_in_step82": false,
+  "frozen_artifacts": {
+    "model": {
+      "path": "artifacts/models/phase3_pyfly_adapter.pt",
+      "sha256": "58932cb5fdf89291cf99611b59c458712906728166e26de46c83cdb36f659da4"
+    },
+    "scaler": {
+      "path": "artifacts/models/phase3_pyfly_adapter_scaler.npz",
+      "sha256": "5ddf15648ccbbcc3bbbcb2cf8f669ccfb50090b867e03abf9021b15420a959ed"
+    },
+    "mapping": {
+      "path": "data/mappings/generator_dual_channel_map.npz",
+      "sha256": "b811159905e3d8a73bba8d005a71db69e571cf95ced97d928f07cf494c7d998a"
+    },
+    "step80_metrics": {
+      "path": "artifacts/metrics/phase3_pyfly_adapter_training.json",
+      "sha256": "7c29d5d7b95fa9cd3cca345fd4c915ce0424402bfb6f7a038d3a259aa0bd421c"
+    },
+    "step81_metrics": {
+      "path": "artifacts/metrics/phase3_closed_loop_development_test.json",
+      "sha256": "27c8b5c3958b010ff8d956a5de981109dcd1c53102a065df21b7adb51ec6c59d"
+    },
+    "fresh_holdout": {
+      "path": "data/raw/phase3_fresh_holdout.jsonl",
+      "sha256": "7689c066d6daaffe5b06d1465870a99900201e81f57de08d2383084f98f4b47c"
+    }
+  },
+  "rules_after_freeze": [
+    "Do not retrain the Step-80 adapter before Phase-3 final evaluation.",
+    "Do not change neural mapping, stimulation settings, architecture, scaler, decoding logic, or closed-loop feedback policy.",
+    "Do not inspect final holdout performance until the evaluation script is ready.",
+    "After final evaluation, results may be analyzed but must not be used to retroactively tune the reported Phase-3 model."
+  ]
+}

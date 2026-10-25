@@ -1,0 +1,1361 @@
+{
+  "selected_family": "Balanced Logistic",
+  "selected_configuration": "Balanced Logistic PCA=100 C=0.1",
+  "validation_accuracy": 0.7263157894736842,
+  "validation_macro_f1": 0.6347099006497117,
+  "test_top1_accuracy": 0.7789473684210526,
+  "test_top2_accuracy": 0.9052631578947369,
+  "test_top3_accuracy": 0.9578947368421052,
+  "test_macro_f1": 0.7119017706082382,
+  "semantic_position_accuracy": 0.65,
+  "majority_baseline": 0.15789473684210525,
+  "uniform_chance": 0.1111111111111111,
+  "accuracy_by_position": {
+    "0": 0.6666666666666666,
+    "1": 1.0,
+    "2": 0.6666666666666666,
+    "3": 0.6666666666666666,
+    "4": 0.6,
+    "5": 1.0,
+    "6": 1.0
+  },
+  "accuracy_by_token": {
+    "ASSIGN": 1.0,
+    "DIVIDE": 0.8,
+    "EOS": 0.8,
+    "MINUS": 0.7,
+    "NAME_A": 0.6666666666666666,
+    "NAME_B": 0.65,
+    "NAME_X": 0.1,
+    "NAME_Y": 1.0,
+    "NEWLINE": 0.8333333333333334
+  },
+  "family_validation_results": {
+    "Ridge": {
+      "validation_accuracy": 0.5684210526315789,
+      "validation_macro_f1": 0.40578083887943045,
+      "pca_components": 100,
+      "parameter": 0.001
+    },
+    "Balanced Ridge": {
+      "validation_accuracy": 0.5473684210526316,
+      "validation_macro_f1": 0.47283878975055443,
+      "pca_components": 100,
+      "parameter": 0.001
+    },
+    "Logistic": {
+      "validation_accuracy": 0.7263157894736842,
+      "validation_macro_f1": 0.5832309658460212,
+      "pca_components": 100,
+      "parameter": 0.01
+    },
+    "Balanced Logistic": {
+      "validation_accuracy": 0.7263157894736842,
+      "validation_macro_f1": 0.6347099006497117,
+      "pca_components": 100,
+      "parameter": 0.1
+    },
+    "Linear SVM": {
+      "validation_accuracy": 0.6526315789473685,
+      "validation_macro_f1": 0.5064867208045967,
+      "pca_components": 100,
+      "parameter": 0.1
+    },
+    "Balanced Linear SVM": {
+      "validation_accuracy": 0.6789473684210526,
+      "validation_macro_f1": 0.592247987000332,
+      "pca_components": 100,
+      "parameter": 0.1
+    }
+  },
+  "all_validation_results": [
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=10 alpha=0.001",
+      "components": 10,
+      "parameter": 0.001,
+      "validation_accuracy": 0.32105263157894737,
+      "validation_macro_f1": 0.15793269723463593
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=10 alpha=0.01",
+      "components": 10,
+      "parameter": 0.01,
+      "validation_accuracy": 0.32105263157894737,
+      "validation_macro_f1": 0.15793269723463593
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=10 alpha=0.1",
+      "components": 10,
+      "parameter": 0.1,
+      "validation_accuracy": 0.32105263157894737,
+      "validation_macro_f1": 0.15793269723463593
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=10 alpha=1.0",
+      "components": 10,
+      "parameter": 1.0,
+      "validation_accuracy": 0.32105263157894737,
+      "validation_macro_f1": 0.15793269723463593
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=10 alpha=10.0",
+      "components": 10,
+      "parameter": 10.0,
+      "validation_accuracy": 0.32105263157894737,
+      "validation_macro_f1": 0.15793269723463593
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=10 alpha=100.0",
+      "components": 10,
+      "parameter": 100.0,
+      "validation_accuracy": 0.32105263157894737,
+      "validation_macro_f1": 0.15793269723463593
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=20 alpha=0.001",
+      "components": 20,
+      "parameter": 0.001,
+      "validation_accuracy": 0.30526315789473685,
+      "validation_macro_f1": 0.1897293932354908
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=20 alpha=0.01",
+      "components": 20,
+      "parameter": 0.01,
+      "validation_accuracy": 0.30526315789473685,
+      "validation_macro_f1": 0.1897293932354908
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=20 alpha=0.1",
+      "components": 20,
+      "parameter": 0.1,
+      "validation_accuracy": 0.30526315789473685,
+      "validation_macro_f1": 0.1897293932354908
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=20 alpha=1.0",
+      "components": 20,
+      "parameter": 1.0,
+      "validation_accuracy": 0.30526315789473685,
+      "validation_macro_f1": 0.1897293932354908
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=20 alpha=10.0",
+      "components": 20,
+      "parameter": 10.0,
+      "validation_accuracy": 0.30526315789473685,
+      "validation_macro_f1": 0.1897293932354908
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=20 alpha=100.0",
+      "components": 20,
+      "parameter": 100.0,
+      "validation_accuracy": 0.30526315789473685,
+      "validation_macro_f1": 0.1897293932354908
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=40 alpha=0.001",
+      "components": 40,
+      "parameter": 0.001,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.3902435130505306
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=40 alpha=0.01",
+      "components": 40,
+      "parameter": 0.01,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.3902435130505306
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=40 alpha=0.1",
+      "components": 40,
+      "parameter": 0.1,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.3902435130505306
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=40 alpha=1.0",
+      "components": 40,
+      "parameter": 1.0,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.3902435130505306
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=40 alpha=10.0",
+      "components": 40,
+      "parameter": 10.0,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.3902435130505306
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=40 alpha=100.0",
+      "components": 40,
+      "parameter": 100.0,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.3902435130505306
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=60 alpha=0.001",
+      "components": 60,
+      "parameter": 0.001,
+      "validation_accuracy": 0.5578947368421052,
+      "validation_macro_f1": 0.38167972378498694
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=60 alpha=0.01",
+      "components": 60,
+      "parameter": 0.01,
+      "validation_accuracy": 0.5578947368421052,
+      "validation_macro_f1": 0.38167972378498694
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=60 alpha=0.1",
+      "components": 60,
+      "parameter": 0.1,
+      "validation_accuracy": 0.5578947368421052,
+      "validation_macro_f1": 0.38167972378498694
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=60 alpha=1.0",
+      "components": 60,
+      "parameter": 1.0,
+      "validation_accuracy": 0.5578947368421052,
+      "validation_macro_f1": 0.38167972378498694
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=60 alpha=10.0",
+      "components": 60,
+      "parameter": 10.0,
+      "validation_accuracy": 0.5578947368421052,
+      "validation_macro_f1": 0.38167972378498694
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=60 alpha=100.0",
+      "components": 60,
+      "parameter": 100.0,
+      "validation_accuracy": 0.5578947368421052,
+      "validation_macro_f1": 0.38167972378498694
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=100 alpha=0.001",
+      "components": 100,
+      "parameter": 0.001,
+      "validation_accuracy": 0.5684210526315789,
+      "validation_macro_f1": 0.40578083887943045
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=100 alpha=0.01",
+      "components": 100,
+      "parameter": 0.01,
+      "validation_accuracy": 0.5684210526315789,
+      "validation_macro_f1": 0.40578083887943045
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=100 alpha=0.1",
+      "components": 100,
+      "parameter": 0.1,
+      "validation_accuracy": 0.5684210526315789,
+      "validation_macro_f1": 0.40578083887943045
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=100 alpha=1.0",
+      "components": 100,
+      "parameter": 1.0,
+      "validation_accuracy": 0.5684210526315789,
+      "validation_macro_f1": 0.40578083887943045
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=100 alpha=10.0",
+      "components": 100,
+      "parameter": 10.0,
+      "validation_accuracy": 0.5684210526315789,
+      "validation_macro_f1": 0.40578083887943045
+    },
+    {
+      "family": "Ridge",
+      "name": "Ridge PCA=100 alpha=100.0",
+      "components": 100,
+      "parameter": 100.0,
+      "validation_accuracy": 0.5684210526315789,
+      "validation_macro_f1": 0.40578083887943045
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=10 alpha=0.001",
+      "components": 10,
+      "parameter": 0.001,
+      "validation_accuracy": 0.23157894736842105,
+      "validation_macro_f1": 0.15320284063191866
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=10 alpha=0.01",
+      "components": 10,
+      "parameter": 0.01,
+      "validation_accuracy": 0.23157894736842105,
+      "validation_macro_f1": 0.15320284063191866
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=10 alpha=0.1",
+      "components": 10,
+      "parameter": 0.1,
+      "validation_accuracy": 0.23157894736842105,
+      "validation_macro_f1": 0.15320284063191866
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=10 alpha=1.0",
+      "components": 10,
+      "parameter": 1.0,
+      "validation_accuracy": 0.23157894736842105,
+      "validation_macro_f1": 0.15320284063191866
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=10 alpha=10.0",
+      "components": 10,
+      "parameter": 10.0,
+      "validation_accuracy": 0.23157894736842105,
+      "validation_macro_f1": 0.15320284063191866
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=10 alpha=100.0",
+      "components": 10,
+      "parameter": 100.0,
+      "validation_accuracy": 0.23157894736842105,
+      "validation_macro_f1": 0.15320284063191866
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=20 alpha=0.001",
+      "components": 20,
+      "parameter": 0.001,
+      "validation_accuracy": 0.3263157894736842,
+      "validation_macro_f1": 0.23838941972874014
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=20 alpha=0.01",
+      "components": 20,
+      "parameter": 0.01,
+      "validation_accuracy": 0.3263157894736842,
+      "validation_macro_f1": 0.23838941972874014
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=20 alpha=0.1",
+      "components": 20,
+      "parameter": 0.1,
+      "validation_accuracy": 0.3263157894736842,
+      "validation_macro_f1": 0.23838941972874014
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=20 alpha=1.0",
+      "components": 20,
+      "parameter": 1.0,
+      "validation_accuracy": 0.3263157894736842,
+      "validation_macro_f1": 0.23838941972874014
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=20 alpha=10.0",
+      "components": 20,
+      "parameter": 10.0,
+      "validation_accuracy": 0.3263157894736842,
+      "validation_macro_f1": 0.23838941972874014
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=20 alpha=100.0",
+      "components": 20,
+      "parameter": 100.0,
+      "validation_accuracy": 0.3263157894736842,
+      "validation_macro_f1": 0.23838941972874014
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=40 alpha=0.001",
+      "components": 40,
+      "parameter": 0.001,
+      "validation_accuracy": 0.4473684210526316,
+      "validation_macro_f1": 0.37771396861942996
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=40 alpha=0.01",
+      "components": 40,
+      "parameter": 0.01,
+      "validation_accuracy": 0.4473684210526316,
+      "validation_macro_f1": 0.37771396861942996
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=40 alpha=0.1",
+      "components": 40,
+      "parameter": 0.1,
+      "validation_accuracy": 0.4473684210526316,
+      "validation_macro_f1": 0.37771396861942996
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=40 alpha=1.0",
+      "components": 40,
+      "parameter": 1.0,
+      "validation_accuracy": 0.4473684210526316,
+      "validation_macro_f1": 0.37771396861942996
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=40 alpha=10.0",
+      "components": 40,
+      "parameter": 10.0,
+      "validation_accuracy": 0.4473684210526316,
+      "validation_macro_f1": 0.37771396861942996
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=40 alpha=100.0",
+      "components": 40,
+      "parameter": 100.0,
+      "validation_accuracy": 0.4473684210526316,
+      "validation_macro_f1": 0.37771396861942996
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=60 alpha=0.001",
+      "components": 60,
+      "parameter": 0.001,
+      "validation_accuracy": 0.49473684210526314,
+      "validation_macro_f1": 0.41996564619113635
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=60 alpha=0.01",
+      "components": 60,
+      "parameter": 0.01,
+      "validation_accuracy": 0.49473684210526314,
+      "validation_macro_f1": 0.41996564619113635
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=60 alpha=0.1",
+      "components": 60,
+      "parameter": 0.1,
+      "validation_accuracy": 0.49473684210526314,
+      "validation_macro_f1": 0.41996564619113635
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=60 alpha=1.0",
+      "components": 60,
+      "parameter": 1.0,
+      "validation_accuracy": 0.49473684210526314,
+      "validation_macro_f1": 0.41996564619113635
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=60 alpha=10.0",
+      "components": 60,
+      "parameter": 10.0,
+      "validation_accuracy": 0.49473684210526314,
+      "validation_macro_f1": 0.41996564619113635
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=60 alpha=100.0",
+      "components": 60,
+      "parameter": 100.0,
+      "validation_accuracy": 0.49473684210526314,
+      "validation_macro_f1": 0.41996564619113635
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=100 alpha=0.001",
+      "components": 100,
+      "parameter": 0.001,
+      "validation_accuracy": 0.5473684210526316,
+      "validation_macro_f1": 0.47283878975055443
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=100 alpha=0.01",
+      "components": 100,
+      "parameter": 0.01,
+      "validation_accuracy": 0.5473684210526316,
+      "validation_macro_f1": 0.47283878975055443
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=100 alpha=0.1",
+      "components": 100,
+      "parameter": 0.1,
+      "validation_accuracy": 0.5473684210526316,
+      "validation_macro_f1": 0.47283878975055443
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=100 alpha=1.0",
+      "components": 100,
+      "parameter": 1.0,
+      "validation_accuracy": 0.5473684210526316,
+      "validation_macro_f1": 0.47283878975055443
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=100 alpha=10.0",
+      "components": 100,
+      "parameter": 10.0,
+      "validation_accuracy": 0.5473684210526316,
+      "validation_macro_f1": 0.47283878975055443
+    },
+    {
+      "family": "Balanced Ridge",
+      "name": "Balanced Ridge PCA=100 alpha=100.0",
+      "components": 100,
+      "parameter": 100.0,
+      "validation_accuracy": 0.5473684210526316,
+      "validation_macro_f1": 0.47283878975055443
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=10 C=0.01",
+      "components": 10,
+      "parameter": 0.01,
+      "validation_accuracy": 0.45263157894736844,
+      "validation_macro_f1": 0.3044888930379208
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=10 C=0.1",
+      "components": 10,
+      "parameter": 0.1,
+      "validation_accuracy": 0.45263157894736844,
+      "validation_macro_f1": 0.3042747414016585
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=10 C=1.0",
+      "components": 10,
+      "parameter": 1.0,
+      "validation_accuracy": 0.4473684210526316,
+      "validation_macro_f1": 0.3015617164553335
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=10 C=10.0",
+      "components": 10,
+      "parameter": 10.0,
+      "validation_accuracy": 0.45263157894736844,
+      "validation_macro_f1": 0.3042747414016585
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=10 C=100.0",
+      "components": 10,
+      "parameter": 100.0,
+      "validation_accuracy": 0.45789473684210524,
+      "validation_macro_f1": 0.30697032406585223
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=20 C=0.01",
+      "components": 20,
+      "parameter": 0.01,
+      "validation_accuracy": 0.38421052631578945,
+      "validation_macro_f1": 0.30643237934904605
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=20 C=0.1",
+      "components": 20,
+      "parameter": 0.1,
+      "validation_accuracy": 0.38421052631578945,
+      "validation_macro_f1": 0.30701059264021335
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=20 C=1.0",
+      "components": 20,
+      "parameter": 1.0,
+      "validation_accuracy": 0.3894736842105263,
+      "validation_macro_f1": 0.3109646708607235
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=20 C=10.0",
+      "components": 20,
+      "parameter": 10.0,
+      "validation_accuracy": 0.38421052631578945,
+      "validation_macro_f1": 0.30556714134511087
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=20 C=100.0",
+      "components": 20,
+      "parameter": 100.0,
+      "validation_accuracy": 0.4,
+      "validation_macro_f1": 0.31518136843206646
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=40 C=0.01",
+      "components": 40,
+      "parameter": 0.01,
+      "validation_accuracy": 0.6052631578947368,
+      "validation_macro_f1": 0.4455933147810474
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=40 C=0.1",
+      "components": 40,
+      "parameter": 0.1,
+      "validation_accuracy": 0.5894736842105263,
+      "validation_macro_f1": 0.43685506119786127
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=40 C=1.0",
+      "components": 40,
+      "parameter": 1.0,
+      "validation_accuracy": 0.5894736842105263,
+      "validation_macro_f1": 0.43564954579350934
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=40 C=10.0",
+      "components": 40,
+      "parameter": 10.0,
+      "validation_accuracy": 0.5894736842105263,
+      "validation_macro_f1": 0.43564954579350934
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=40 C=100.0",
+      "components": 40,
+      "parameter": 100.0,
+      "validation_accuracy": 0.5894736842105263,
+      "validation_macro_f1": 0.43564954579350934
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=60 C=0.01",
+      "components": 60,
+      "parameter": 0.01,
+      "validation_accuracy": 0.6421052631578947,
+      "validation_macro_f1": 0.49987465162066536
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=60 C=0.1",
+      "components": 60,
+      "parameter": 0.1,
+      "validation_accuracy": 0.631578947368421,
+      "validation_macro_f1": 0.4994690809274663
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=60 C=1.0",
+      "components": 60,
+      "parameter": 1.0,
+      "validation_accuracy": 0.6263157894736842,
+      "validation_macro_f1": 0.4946416828475142
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=60 C=10.0",
+      "components": 60,
+      "parameter": 10.0,
+      "validation_accuracy": 0.6263157894736842,
+      "validation_macro_f1": 0.4946416828475142
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=60 C=100.0",
+      "components": 60,
+      "parameter": 100.0,
+      "validation_accuracy": 0.6263157894736842,
+      "validation_macro_f1": 0.4946416828475142
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=100 C=0.01",
+      "components": 100,
+      "parameter": 0.01,
+      "validation_accuracy": 0.7263157894736842,
+      "validation_macro_f1": 0.5832309658460212
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=100 C=0.1",
+      "components": 100,
+      "parameter": 0.1,
+      "validation_accuracy": 0.7052631578947368,
+      "validation_macro_f1": 0.5652007847410147
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=100 C=1.0",
+      "components": 100,
+      "parameter": 1.0,
+      "validation_accuracy": 0.6578947368421053,
+      "validation_macro_f1": 0.49002400145566394
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=100 C=10.0",
+      "components": 100,
+      "parameter": 10.0,
+      "validation_accuracy": 0.6368421052631579,
+      "validation_macro_f1": 0.491042612250286
+    },
+    {
+      "family": "Logistic",
+      "name": "Logistic PCA=100 C=100.0",
+      "components": 100,
+      "parameter": 100.0,
+      "validation_accuracy": 0.6105263157894737,
+      "validation_macro_f1": 0.47608909608909605
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=10 C=0.01",
+      "components": 10,
+      "parameter": 0.01,
+      "validation_accuracy": 0.3,
+      "validation_macro_f1": 0.24624447605833996
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=10 C=0.1",
+      "components": 10,
+      "parameter": 0.1,
+      "validation_accuracy": 0.3,
+      "validation_macro_f1": 0.24549646921659982
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=10 C=1.0",
+      "components": 10,
+      "parameter": 1.0,
+      "validation_accuracy": 0.3,
+      "validation_macro_f1": 0.24617987708267025
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=10 C=10.0",
+      "components": 10,
+      "parameter": 10.0,
+      "validation_accuracy": 0.3,
+      "validation_macro_f1": 0.24617987708267025
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=10 C=100.0",
+      "components": 10,
+      "parameter": 100.0,
+      "validation_accuracy": 0.3,
+      "validation_macro_f1": 0.24564221857325302
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=20 C=0.01",
+      "components": 20,
+      "parameter": 0.01,
+      "validation_accuracy": 0.38421052631578945,
+      "validation_macro_f1": 0.3441946422059867
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=20 C=0.1",
+      "components": 20,
+      "parameter": 0.1,
+      "validation_accuracy": 0.37894736842105264,
+      "validation_macro_f1": 0.3409623446873336
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=20 C=1.0",
+      "components": 20,
+      "parameter": 1.0,
+      "validation_accuracy": 0.37894736842105264,
+      "validation_macro_f1": 0.3410461388887749
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=20 C=10.0",
+      "components": 20,
+      "parameter": 10.0,
+      "validation_accuracy": 0.37894736842105264,
+      "validation_macro_f1": 0.3409623446873336
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=20 C=100.0",
+      "components": 20,
+      "parameter": 100.0,
+      "validation_accuracy": 0.37894736842105264,
+      "validation_macro_f1": 0.3409623446873336
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=40 C=0.01",
+      "components": 40,
+      "parameter": 0.01,
+      "validation_accuracy": 0.531578947368421,
+      "validation_macro_f1": 0.47000289884855995
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=40 C=0.1",
+      "components": 40,
+      "parameter": 0.1,
+      "validation_accuracy": 0.5473684210526316,
+      "validation_macro_f1": 0.4932334154771784
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=40 C=1.0",
+      "components": 40,
+      "parameter": 1.0,
+      "validation_accuracy": 0.5578947368421052,
+      "validation_macro_f1": 0.5045868427613943
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=40 C=10.0",
+      "components": 40,
+      "parameter": 10.0,
+      "validation_accuracy": 0.5578947368421052,
+      "validation_macro_f1": 0.5045868427613943
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=40 C=100.0",
+      "components": 40,
+      "parameter": 100.0,
+      "validation_accuracy": 0.5526315789473685,
+      "validation_macro_f1": 0.4946089513755806
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=60 C=0.01",
+      "components": 60,
+      "parameter": 0.01,
+      "validation_accuracy": 0.6421052631578947,
+      "validation_macro_f1": 0.578382358180312
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=60 C=0.1",
+      "components": 60,
+      "parameter": 0.1,
+      "validation_accuracy": 0.631578947368421,
+      "validation_macro_f1": 0.5465240129480518
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=60 C=1.0",
+      "components": 60,
+      "parameter": 1.0,
+      "validation_accuracy": 0.6210526315789474,
+      "validation_macro_f1": 0.5324773316812367
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=60 C=10.0",
+      "components": 60,
+      "parameter": 10.0,
+      "validation_accuracy": 0.6368421052631579,
+      "validation_macro_f1": 0.5452112780993137
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=60 C=100.0",
+      "components": 60,
+      "parameter": 100.0,
+      "validation_accuracy": 0.631578947368421,
+      "validation_macro_f1": 0.5417622620406486
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=100 C=0.01",
+      "components": 100,
+      "parameter": 0.01,
+      "validation_accuracy": 0.7,
+      "validation_macro_f1": 0.6124194788811494
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=100 C=0.1",
+      "components": 100,
+      "parameter": 0.1,
+      "validation_accuracy": 0.7263157894736842,
+      "validation_macro_f1": 0.6347099006497117
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=100 C=1.0",
+      "components": 100,
+      "parameter": 1.0,
+      "validation_accuracy": 0.6631578947368421,
+      "validation_macro_f1": 0.539486303951423
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=100 C=10.0",
+      "components": 100,
+      "parameter": 10.0,
+      "validation_accuracy": 0.6421052631578947,
+      "validation_macro_f1": 0.5179067982022989
+    },
+    {
+      "family": "Balanced Logistic",
+      "name": "Balanced Logistic PCA=100 C=100.0",
+      "components": 100,
+      "parameter": 100.0,
+      "validation_accuracy": 0.6263157894736842,
+      "validation_macro_f1": 0.5211077125823897
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=10 C=0.001",
+      "components": 10,
+      "parameter": 0.001,
+      "validation_accuracy": 0.32105263157894737,
+      "validation_macro_f1": 0.15793269723463593
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=10 C=0.01",
+      "components": 10,
+      "parameter": 0.01,
+      "validation_accuracy": 0.3684210526315789,
+      "validation_macro_f1": 0.22555246327029335
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=10 C=0.1",
+      "components": 10,
+      "parameter": 0.1,
+      "validation_accuracy": 0.4,
+      "validation_macro_f1": 0.2518934965218957
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=10 C=1.0",
+      "components": 10,
+      "parameter": 1.0,
+      "validation_accuracy": 0.4,
+      "validation_macro_f1": 0.2518934965218957
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=10 C=10.0",
+      "components": 10,
+      "parameter": 10.0,
+      "validation_accuracy": 0.4,
+      "validation_macro_f1": 0.2518934965218957
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=20 C=0.001",
+      "components": 20,
+      "parameter": 0.001,
+      "validation_accuracy": 0.3,
+      "validation_macro_f1": 0.184124946512623
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=20 C=0.01",
+      "components": 20,
+      "parameter": 0.01,
+      "validation_accuracy": 0.30526315789473685,
+      "validation_macro_f1": 0.18444597443220456
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=20 C=0.1",
+      "components": 20,
+      "parameter": 0.1,
+      "validation_accuracy": 0.32105263157894737,
+      "validation_macro_f1": 0.213777486727211
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=20 C=1.0",
+      "components": 20,
+      "parameter": 1.0,
+      "validation_accuracy": 0.3631578947368421,
+      "validation_macro_f1": 0.28430211763545093
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=20 C=10.0",
+      "components": 20,
+      "parameter": 10.0,
+      "validation_accuracy": 0.3631578947368421,
+      "validation_macro_f1": 0.28122789716992613
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=40 C=0.001",
+      "components": 40,
+      "parameter": 0.001,
+      "validation_accuracy": 0.49473684210526314,
+      "validation_macro_f1": 0.3834947395858001
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=40 C=0.01",
+      "components": 40,
+      "parameter": 0.01,
+      "validation_accuracy": 0.5736842105263158,
+      "validation_macro_f1": 0.4193323147885441
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=40 C=0.1",
+      "components": 40,
+      "parameter": 0.1,
+      "validation_accuracy": 0.6,
+      "validation_macro_f1": 0.4366472968638192
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=40 C=1.0",
+      "components": 40,
+      "parameter": 1.0,
+      "validation_accuracy": 0.6210526315789474,
+      "validation_macro_f1": 0.4590702287996046
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=40 C=10.0",
+      "components": 40,
+      "parameter": 10.0,
+      "validation_accuracy": 0.631578947368421,
+      "validation_macro_f1": 0.4700810229089903
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=60 C=0.001",
+      "components": 60,
+      "parameter": 0.001,
+      "validation_accuracy": 0.5684210526315789,
+      "validation_macro_f1": 0.41200279076893137
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=60 C=0.01",
+      "components": 60,
+      "parameter": 0.01,
+      "validation_accuracy": 0.5842105263157895,
+      "validation_macro_f1": 0.41692409444186745
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=60 C=0.1",
+      "components": 60,
+      "parameter": 0.1,
+      "validation_accuracy": 0.6263157894736842,
+      "validation_macro_f1": 0.4584993982052806
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=60 C=1.0",
+      "components": 60,
+      "parameter": 1.0,
+      "validation_accuracy": 0.6421052631578947,
+      "validation_macro_f1": 0.4906572351259047
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=60 C=10.0",
+      "components": 60,
+      "parameter": 10.0,
+      "validation_accuracy": 0.6421052631578947,
+      "validation_macro_f1": 0.4924712940828208
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=100 C=0.001",
+      "components": 100,
+      "parameter": 0.001,
+      "validation_accuracy": 0.5842105263157895,
+      "validation_macro_f1": 0.4403906707828276
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=100 C=0.01",
+      "components": 100,
+      "parameter": 0.01,
+      "validation_accuracy": 0.6,
+      "validation_macro_f1": 0.4591120698631499
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=100 C=0.1",
+      "components": 100,
+      "parameter": 0.1,
+      "validation_accuracy": 0.6526315789473685,
+      "validation_macro_f1": 0.5064867208045967
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=100 C=1.0",
+      "components": 100,
+      "parameter": 1.0,
+      "validation_accuracy": 0.6421052631578947,
+      "validation_macro_f1": 0.5052517633313053
+    },
+    {
+      "family": "Linear SVM",
+      "name": "Linear SVM PCA=100 C=10.0",
+      "components": 100,
+      "parameter": 10.0,
+      "validation_accuracy": 0.631578947368421,
+      "validation_macro_f1": 0.49625525619130567
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=10 C=0.001",
+      "components": 10,
+      "parameter": 0.001,
+      "validation_accuracy": 0.2894736842105263,
+      "validation_macro_f1": 0.1880908139825862
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=10 C=0.01",
+      "components": 10,
+      "parameter": 0.01,
+      "validation_accuracy": 0.29473684210526313,
+      "validation_macro_f1": 0.19278275092473254
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=10 C=0.1",
+      "components": 10,
+      "parameter": 0.1,
+      "validation_accuracy": 0.3526315789473684,
+      "validation_macro_f1": 0.2333563544963659
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=10 C=1.0",
+      "components": 10,
+      "parameter": 1.0,
+      "validation_accuracy": 0.35789473684210527,
+      "validation_macro_f1": 0.252694433628357
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=10 C=10.0",
+      "components": 10,
+      "parameter": 10.0,
+      "validation_accuracy": 0.3526315789473684,
+      "validation_macro_f1": 0.24881835509128244
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=20 C=0.001",
+      "components": 20,
+      "parameter": 0.001,
+      "validation_accuracy": 0.32105263157894737,
+      "validation_macro_f1": 0.2222608585626015
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=20 C=0.01",
+      "components": 20,
+      "parameter": 0.01,
+      "validation_accuracy": 0.3368421052631579,
+      "validation_macro_f1": 0.24549526701607047
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=20 C=0.1",
+      "components": 20,
+      "parameter": 0.1,
+      "validation_accuracy": 0.3631578947368421,
+      "validation_macro_f1": 0.2780836067132601
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=20 C=1.0",
+      "components": 20,
+      "parameter": 1.0,
+      "validation_accuracy": 0.3684210526315789,
+      "validation_macro_f1": 0.2951224698877281
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=20 C=10.0",
+      "components": 20,
+      "parameter": 10.0,
+      "validation_accuracy": 0.3736842105263158,
+      "validation_macro_f1": 0.3078184992504241
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=40 C=0.001",
+      "components": 40,
+      "parameter": 0.001,
+      "validation_accuracy": 0.47368421052631576,
+      "validation_macro_f1": 0.38096561839499693
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=40 C=0.01",
+      "components": 40,
+      "parameter": 0.01,
+      "validation_accuracy": 0.5,
+      "validation_macro_f1": 0.4030687244101878
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=40 C=0.1",
+      "components": 40,
+      "parameter": 0.1,
+      "validation_accuracy": 0.531578947368421,
+      "validation_macro_f1": 0.4559572020496235
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=40 C=1.0",
+      "components": 40,
+      "parameter": 1.0,
+      "validation_accuracy": 0.5631578947368421,
+      "validation_macro_f1": 0.4957830288881606
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=40 C=10.0",
+      "components": 40,
+      "parameter": 10.0,
+      "validation_accuracy": 0.5736842105263158,
+      "validation_macro_f1": 0.5073076545774291
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=60 C=0.001",
+      "components": 60,
+      "parameter": 0.001,
+      "validation_accuracy": 0.531578947368421,
+      "validation_macro_f1": 0.4162560888961848
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=60 C=0.01",
+      "components": 60,
+      "parameter": 0.01,
+      "validation_accuracy": 0.5421052631578948,
+      "validation_macro_f1": 0.41682430404234916
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=60 C=0.1",
+      "components": 60,
+      "parameter": 0.1,
+      "validation_accuracy": 0.6052631578947368,
+      "validation_macro_f1": 0.5162144654681968
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=60 C=1.0",
+      "components": 60,
+      "parameter": 1.0,
+      "validation_accuracy": 0.6421052631578947,
+      "validation_macro_f1": 0.5569209795265946
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=60 C=10.0",
+      "components": 60,
+      "parameter": 10.0,
+      "validation_accuracy": 0.6421052631578947,
+      "validation_macro_f1": 0.5511699555199253
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=100 C=0.001",
+      "components": 100,
+      "parameter": 0.001,
+      "validation_accuracy": 0.5473684210526316,
+      "validation_macro_f1": 0.4290012485989172
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=100 C=0.01",
+      "components": 100,
+      "parameter": 0.01,
+      "validation_accuracy": 0.5894736842105263,
+      "validation_macro_f1": 0.511487714470316
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=100 C=0.1",
+      "components": 100,
+      "parameter": 0.1,
+      "validation_accuracy": 0.6789473684210526,
+      "validation_macro_f1": 0.592247987000332
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=100 C=1.0",
+      "components": 100,
+      "parameter": 1.0,
+      "validation_accuracy": 0.6684210526315789,
+      "validation_macro_f1": 0.5609156069938823
+    },
+    {
+      "family": "Balanced Linear SVM",
+      "name": "Balanced Linear SVM PCA=100 C=10.0",
+      "components": 100,
+      "parameter": 10.0,
+      "validation_accuracy": 0.6368421052631579,
+      "validation_macro_f1": 0.5135148522845215
+    }
+  ],
+  "old_ridge": {
+    "top1": 0.6631578947368421,
+    "top2": 0.8526315789473684,
+    "top3": 1.0,
+    "macro_f1": 0.4365967365967366,
+    "top1_change": 0.11578947368421055,
+    "macro_f1_change": 0.27530503401150164
+  }
+}

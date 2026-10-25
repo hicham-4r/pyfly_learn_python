@@ -1,0 +1,127 @@
+{
+  "protocol": "PyFly final evaluation",
+  "protocol_version": 1,
+  "created_at_utc": "2026-10-24T23:14:16.657391+00:00",
+  "status": "FROZEN_BEFORE_FINAL_EVALUATION",
+  "architecture": {
+    "name": "Step-62 original 7-block generator",
+    "reservoir": "MaleCNS-derived FlyBrain",
+    "recurrent_weights": "frozen",
+    "prompt_encoder": "position-aware token-position population code",
+    "feedback_encoder": "non-positional code-token population code",
+    "readout_population": "indirect visual_projection",
+    "directly_stimulated_neurons_excluded": true,
+    "feature_blocks": [
+      "prompt_mean",
+      "prompt_max",
+      "prompt_final",
+      "feedback_mean",
+      "feedback_max",
+      "feedback_final",
+      "delayed_state"
+    ],
+    "feature_block_count": 7,
+    "max_prompt_positions": 6,
+    "prompt_neurons_per_channel": 16,
+    "feedback_neurons_per_token": 32,
+    "prompt_token_steps": 8,
+    "prompt_gap_steps": 2,
+    "feedback_token_steps": 8,
+    "feedback_gap_steps": 1,
+    "warmup_steps": 10,
+    "amplitude": 0.8,
+    "trace_tau": 0.25,
+    "mapping_seed": 123,
+    "neural_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "decoder_selection": {
+    "selected_family": "Balanced Logistic",
+    "selected_configuration": "Balanced Logistic PCA=100 C=0.1",
+    "development_validation_accuracy": 0.7263157894736842,
+    "development_validation_macro_f1": 0.6347099006497117,
+    "development_diagnostic_test_top1": 0.7789473684210526,
+    "development_diagnostic_test_macro_f1": 0.7119017706082382,
+    "development_diagnostic_semantic_accuracy": 0.65
+  },
+  "final_holdout": {
+    "logical_prompts": 24,
+    "intent_counts": {
+      "copy_a_x": 4,
+      "copy_x_a": 4,
+      "div_ab": 4,
+      "div_ba": 4,
+      "sub_ab": 4,
+      "sub_ba": 4
+    },
+    "development_prompt_vocabulary_size": 29,
+    "holdout_used_prompt_tokens": 21,
+    "holdout_used_token_position_channels": 29,
+    "generator_teacher_forcing_rows": 152,
+    "all_tokens_known": true,
+    "all_token_position_channels_previously_seen": true,
+    "development_prompt_overlap": 0,
+    "max_prompt_length": 6
+  },
+  "rules": [
+    "Do not select architecture from final-holdout results.",
+    "Do not select decoder family or hyperparameters from final-holdout results.",
+    "Refit the already-selected Step-62 decoder on all 48 development prompts before final scoring.",
+    "Keep the MaleCNS recurrent weights frozen.",
+    "Keep the neural mapping seed and encoder settings frozen.",
+    "Use the same five neural seeds for the final MaleCNS evaluation.",
+    "Report macro F1, semantic-position accuracy, exact-program accuracy, valid-program rate, EOS completion, per-token confusion, per-position accuracy, and uncertainty across neural seeds.",
+    "Compare MaleCNS with encoder-only, matched random recurrent reservoir, and shuffled-label controls before making scientific claims."
+  ],
+  "frozen_file_hashes": {
+    "data\\raw\\sequence_challenge.jsonl": {
+      "exists": true,
+      "sha256": "1bca531e63aa9accae0dbc5f412ef05660cce92ecfb2acb51d7101daccfbb354"
+    },
+    "data\\raw\\final_holdout.jsonl": {
+      "exists": true,
+      "sha256": "e2845e8aa6ae02e121c13eb1faace46c2788ebd372e14d0efb90b2c3a433317c"
+    },
+    "data\\processed\\generator_final_holdout.jsonl": {
+      "exists": true,
+      "sha256": "464dc3e1fc4fd4162dcfb5e3f16c25e06d85850c5a75a1634f6255034cf462d8"
+    },
+    "artifacts\\metrics\\generator_decoder_comparison.json": {
+      "exists": true,
+      "sha256": "2a1e7375139da46518b28e4f95922cd782bb9e6855fae7e55adccfba7430c884"
+    },
+    "data\\mappings\\generator_dual_channel_map.npz": {
+      "exists": true,
+      "sha256": "b811159905e3d8a73bba8d005a71db69e571cf95ced97d928f07cf494c7d998a"
+    },
+    "src\\pyfly\\dual_channel_map.py": {
+      "exists": true,
+      "sha256": "0b86f6547ab406baf8982358c1e1a498d9e86378bf2db400d49c4472c258568c"
+    },
+    "src\\pyfly\\generator_dataset.py": {
+      "exists": true,
+      "sha256": "cbda108c864f3e03045c66c66bf3d3091b5b1671d3d90a83d976a3fe86d3d7d7"
+    },
+    "src\\pyfly\\tokenizer.py": {
+      "exists": true,
+      "sha256": "3b15a0e559478723d8249decc2e8b43a488ff7f7efe09ad2be59f321e744f324"
+    },
+    "scripts\\extract_generator_features.py": {
+      "exists": true,
+      "sha256": "4f6a6df25a16c2b163bbb49c8673ccd97b52a58686d19a3eb7ed2ec998607135"
+    },
+    "scripts\\compare_generator_decoders.py": {
+      "exists": true,
+      "sha256": "26bce663c7b91bad572ad5ed9cf12f40c55b0e94f4570e492bd47a8dbdecc2ed"
+    },
+    "scripts\\generate_closed_loop_best_decoder.py": {
+      "exists": true,
+      "sha256": "18c0a39c853bb0f6a95e11306e81bcfabc637380217e587861f0cffd700b7869"
+    }
+  }
+}

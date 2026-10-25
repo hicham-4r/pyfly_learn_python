@@ -1,0 +1,77 @@
+# ============================
+# Python / virtual environment
+# ============================
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ============================
+# IDE / OS
+# ============================
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================
+# Logs / temporary files
+# ============================
+*.log
+*.tmp
+*.bak
+*.swp
+~$*
+
+# ============================
+# Large generated PyFly data
+# ============================
+# Reproducible extracted neural features can be tens/hundreds of MB.
+artifacts/features/
+
+# Experimental plasticity checkpoints are large and not required
+# for running the final Phase-3 model / GUI.
+artifacts/plasticity/
+
+# Keep only the final Phase-3 inference model artifacts.
+artifacts/models/*
+!artifacts/models/phase3_pyfly_adapter.pt
+!artifacts/models/phase3_pyfly_adapter_scaler.npz
+
+# Local GUI history
+artifacts/ui/
+
+# ============================
+# Optional local outputs
+# ============================
+pyfly_generated.py
+*.prof
+
+# Local environments / IDE
+.venv/
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+
+# Handoff / backup bundles
+PyFly_handoff_bundle.zip
+handoff_bundle/
+
+# Large experimental artifacts
+artifacts/features/
+artifacts/plasticity/
+
+# Local GUI history
+artifacts/ui/
+
+# Temporary/generated files
+*.log
+*.tmp
+pyfly_generated.py

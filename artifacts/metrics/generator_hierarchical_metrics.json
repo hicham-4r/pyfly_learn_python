@@ -1,0 +1,184 @@
+{
+  "family_classifier": {
+    "test_accuracy": 0.36666666666666664,
+    "test_macro_f1": 0.3281746031746032,
+    "pca_components": 60,
+    "c_value": 0.01
+  },
+  "global_decoder": {
+    "accuracy": 0.7789473684210526,
+    "macro_f1": 0.7119017706082382,
+    "semantic_accuracy": 0.65
+  },
+  "oracle_hierarchy": {
+    "accuracy": 0.8421052631578947,
+    "macro_f1": 0.8474747474747475,
+    "semantic_accuracy": 0.75
+  },
+  "predicted_hierarchy": {
+    "accuracy": 0.6736842105263158,
+    "macro_f1": 0.5892745331341822,
+    "semantic_accuracy": 0.48333333333333334
+  },
+  "predicted_hierarchy_by_position": {
+    "0": 0.6333333333333333,
+    "1": 1.0,
+    "2": 0.43333333333333335,
+    "3": 0.36666666666666664,
+    "4": 0.5,
+    "5": 1.0,
+    "6": 1.0
+  },
+  "fallback_count": 6,
+  "heads": {
+    "COPY": {
+      "0": {
+        "type": "model",
+        "classes": [
+          "NAME_A",
+          "NAME_X"
+        ],
+        "pca_components": 5,
+        "c_value": 0.01,
+        "validation_accuracy": 0.5,
+        "validation_macro_f1": 0.45054945054945056,
+        "test_accuracy": 0.6,
+        "test_macro_f1": 0.5833333333333333
+      },
+      "1": {
+        "type": "constant",
+        "token": "ASSIGN",
+        "test_accuracy": 1.0
+      },
+      "2": {
+        "type": "model",
+        "classes": [
+          "NAME_A",
+          "NAME_X"
+        ],
+        "pca_components": 5,
+        "c_value": 0.01,
+        "validation_accuracy": 0.7,
+        "validation_macro_f1": 0.696969696969697,
+        "test_accuracy": 0.8,
+        "test_macro_f1": 0.8
+      },
+      "3": {
+        "type": "constant",
+        "token": "NEWLINE",
+        "test_accuracy": 1.0
+      },
+      "4": {
+        "type": "constant",
+        "token": "EOS",
+        "test_accuracy": 1.0
+      }
+    },
+    "SUBTRACT": {
+      "0": {
+        "type": "constant",
+        "token": "NAME_Y",
+        "test_accuracy": 1.0
+      },
+      "1": {
+        "type": "constant",
+        "token": "ASSIGN",
+        "test_accuracy": 1.0
+      },
+      "2": {
+        "type": "model",
+        "classes": [
+          "NAME_A",
+          "NAME_B"
+        ],
+        "pca_components": 10,
+        "c_value": 1.0,
+        "validation_accuracy": 0.2,
+        "validation_macro_f1": 0.16666666666666666,
+        "test_accuracy": 0.4,
+        "test_macro_f1": 0.2857142857142857
+      },
+      "3": {
+        "type": "constant",
+        "token": "MINUS",
+        "test_accuracy": 1.0
+      },
+      "4": {
+        "type": "model",
+        "classes": [
+          "NAME_A",
+          "NAME_B"
+        ],
+        "pca_components": 40,
+        "c_value": 1.0,
+        "validation_accuracy": 0.4,
+        "validation_macro_f1": 0.4,
+        "test_accuracy": 0.4,
+        "test_macro_f1": 0.375
+      },
+      "5": {
+        "type": "constant",
+        "token": "NEWLINE",
+        "test_accuracy": 1.0
+      },
+      "6": {
+        "type": "constant",
+        "token": "EOS",
+        "test_accuracy": 1.0
+      }
+    },
+    "DIVIDE": {
+      "0": {
+        "type": "constant",
+        "token": "NAME_Y",
+        "test_accuracy": 1.0
+      },
+      "1": {
+        "type": "constant",
+        "token": "ASSIGN",
+        "test_accuracy": 1.0
+      },
+      "2": {
+        "type": "model",
+        "classes": [
+          "NAME_A",
+          "NAME_B"
+        ],
+        "pca_components": 40,
+        "c_value": 0.01,
+        "validation_accuracy": 0.6,
+        "validation_macro_f1": 0.5833333333333333,
+        "test_accuracy": 0.4,
+        "test_macro_f1": 0.4
+      },
+      "3": {
+        "type": "constant",
+        "token": "DIVIDE",
+        "test_accuracy": 1.0
+      },
+      "4": {
+        "type": "model",
+        "classes": [
+          "NAME_A",
+          "NAME_B"
+        ],
+        "pca_components": 40,
+        "c_value": 0.01,
+        "validation_accuracy": 0.6,
+        "validation_macro_f1": 0.5238095238095238,
+        "test_accuracy": 0.4,
+        "test_macro_f1": 0.375
+      },
+      "5": {
+        "type": "constant",
+        "token": "NEWLINE",
+        "test_accuracy": 1.0
+      },
+      "6": {
+        "type": "constant",
+        "token": "EOS",
+        "test_accuracy": 1.0
+      }
+    }
+  }
+}

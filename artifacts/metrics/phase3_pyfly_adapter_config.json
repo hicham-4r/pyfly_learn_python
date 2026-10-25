@@ -1,0 +1,44 @@
+{
+  "phase": 3,
+  "step": "80",
+  "status": "PHASE3_ADAPTER_TRAINED",
+  "created_at_utc": "2026-10-25T01:32:07.829480+00:00",
+  "architecture": {
+    "input_dim": 41111,
+    "hidden_dim": 256,
+    "second_hidden_dim": 256,
+    "position_embed_dim": 32,
+    "dropout": 0.2,
+    "input_dropout": 0.05,
+    "num_classes": 9,
+    "token_classes": [
+      "ASSIGN",
+      "DIVIDE",
+      "EOS",
+      "MINUS",
+      "NAME_A",
+      "NAME_B",
+      "NAME_X",
+      "NAME_Y",
+      "NEWLINE"
+    ],
+    "max_position": 6
+  },
+  "training": {
+    "random_seed": 80001,
+    "batch_size": 64,
+    "maximum_epochs": 80,
+    "early_stopping_patience": 12,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 1.0,
+    "class_weighting": "sqrt inverse train frequency",
+    "optimizer": "AdamW",
+    "scheduler": "ReduceLROnPlateau on validation Macro F1"
+  },
+  "selection_rule": "validation Macro F1, then semantic accuracy, then Top-1",
+  "best_epoch": 18,
+  "old_final_holdout_used": false,
+  "model_file": "artifacts/models/phase3_pyfly_adapter.pt",
+  "scaler_file": "artifacts/models/phase3_pyfly_adapter_scaler.npz"
+}

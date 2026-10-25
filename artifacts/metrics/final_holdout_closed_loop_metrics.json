@@ -1,0 +1,567 @@
+{
+  "step": "77E",
+  "created_at_utc": "2026-10-24T23:40:58.268905+00:00",
+  "status": "FINAL_CLOSED_LOOP_EVALUATION_COMPLETE",
+  "frozen_configuration": "Balanced Logistic PCA=100 C=0.1",
+  "device": "cuda",
+  "logical_prompts": 24,
+  "neural_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "generation_episodes": 120,
+  "max_generation_steps": 10,
+  "aggregate": {
+    "mean_token_accuracy": 0.7073511904761903,
+    "exact_program_accuracy": 0.11666666666666667,
+    "valid_program_rate": 0.39166666666666666,
+    "syntax_valid_rate": 0.39166666666666666,
+    "eos_completion_rate": 1.0
+  },
+  "mean_sd_across_neural_seeds": {
+    "mean_token_accuracy": {
+      "mean": 0.7073511904761903,
+      "sd": 0.04846016814689562
+    },
+    "exact_program_accuracy": {
+      "mean": 0.11666666666666665,
+      "sd": 0.0485912657903775
+    },
+    "valid_program_rate": {
+      "mean": 0.3916666666666667,
+      "sd": 0.08579691784155832
+    },
+    "syntax_valid_rate": {
+      "mean": 0.3916666666666667,
+      "sd": 0.08579691784155832
+    },
+    "eos_completion_rate": {
+      "mean": 1.0,
+      "sd": 0.0
+    }
+  },
+  "per_seed": {
+    "0": {
+      "episodes": 24,
+      "mean_token_accuracy": 0.734375,
+      "exact_program_accuracy": 0.125,
+      "valid_program_rate": 0.2916666666666667,
+      "syntax_valid_rate": 0.2916666666666667,
+      "eos_completion_rate": 1.0
+    },
+    "1": {
+      "episodes": 24,
+      "mean_token_accuracy": 0.6714285714285714,
+      "exact_program_accuracy": 0.08333333333333333,
+      "valid_program_rate": 0.3333333333333333,
+      "syntax_valid_rate": 0.3333333333333333,
+      "eos_completion_rate": 1.0
+    },
+    "2": {
+      "episodes": 24,
+      "mean_token_accuracy": 0.6464285714285715,
+      "exact_program_accuracy": 0.16666666666666666,
+      "valid_program_rate": 0.4166666666666667,
+      "syntax_valid_rate": 0.4166666666666667,
+      "eos_completion_rate": 1.0
+    },
+    "3": {
+      "episodes": 24,
+      "mean_token_accuracy": 0.7845238095238095,
+      "exact_program_accuracy": 0.16666666666666666,
+      "valid_program_rate": 0.5416666666666666,
+      "syntax_valid_rate": 0.5416666666666666,
+      "eos_completion_rate": 1.0
+    },
+    "4": {
+      "episodes": 24,
+      "mean_token_accuracy": 0.6999999999999998,
+      "exact_program_accuracy": 0.041666666666666664,
+      "valid_program_rate": 0.375,
+      "syntax_valid_rate": 0.375,
+      "eos_completion_rate": 1.0
+    }
+  },
+  "per_intent": {
+    "copy_a_x": {
+      "episodes": 20,
+      "mean_token_accuracy": 0.6657142857142858,
+      "exact_program_accuracy": 0.3,
+      "valid_program_rate": 0.3,
+      "syntax_valid_rate": 0.3,
+      "eos_completion_rate": 1.0
+    },
+    "copy_x_a": {
+      "episodes": 20,
+      "mean_token_accuracy": 0.5757142857142857,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.4,
+      "syntax_valid_rate": 0.4,
+      "eos_completion_rate": 1.0
+    },
+    "div_ab": {
+      "episodes": 20,
+      "mean_token_accuracy": 0.85,
+      "exact_program_accuracy": 0.25,
+      "valid_program_rate": 0.45,
+      "syntax_valid_rate": 0.45,
+      "eos_completion_rate": 1.0
+    },
+    "div_ba": {
+      "episodes": 20,
+      "mean_token_accuracy": 0.7785714285714286,
+      "exact_program_accuracy": 0.05,
+      "valid_program_rate": 0.7,
+      "syntax_valid_rate": 0.7,
+      "eos_completion_rate": 1.0
+    },
+    "sub_ab": {
+      "episodes": 20,
+      "mean_token_accuracy": 0.6598214285714284,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.25,
+      "syntax_valid_rate": 0.25,
+      "eos_completion_rate": 1.0
+    },
+    "sub_ba": {
+      "episodes": 20,
+      "mean_token_accuracy": 0.7142857142857142,
+      "exact_program_accuracy": 0.1,
+      "valid_program_rate": 0.25,
+      "syntax_valid_rate": 0.25,
+      "eos_completion_rate": 1.0
+    }
+  },
+  "per_prompt": {
+    "final_sub_ab_01": {
+      "intent": "sub_ab",
+      "episodes": 5,
+      "mean_token_accuracy": 0.5714285714285714,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.2
+    },
+    "final_sub_ab_02": {
+      "intent": "sub_ab",
+      "episodes": 5,
+      "mean_token_accuracy": 0.5821428571428571,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.2
+    },
+    "final_sub_ab_03": {
+      "intent": "sub_ab",
+      "episodes": 5,
+      "mean_token_accuracy": 0.7714285714285715,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.4
+    },
+    "final_sub_ab_04": {
+      "intent": "sub_ab",
+      "episodes": 5,
+      "mean_token_accuracy": 0.7142857142857143,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.2
+    },
+    "final_sub_ba_01": {
+      "intent": "sub_ba",
+      "episodes": 5,
+      "mean_token_accuracy": 0.7428571428571429,
+      "exact_program_accuracy": 0.2,
+      "valid_program_rate": 0.2
+    },
+    "final_sub_ba_02": {
+      "intent": "sub_ba",
+      "episodes": 5,
+      "mean_token_accuracy": 0.7428571428571429,
+      "exact_program_accuracy": 0.2,
+      "valid_program_rate": 0.2
+    },
+    "final_sub_ba_03": {
+      "intent": "sub_ba",
+      "episodes": 5,
+      "mean_token_accuracy": 0.6285714285714284,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.6
+    },
+    "final_sub_ba_04": {
+      "intent": "sub_ba",
+      "episodes": 5,
+      "mean_token_accuracy": 0.7428571428571429,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.0
+    },
+    "final_copy_a_x_01": {
+      "intent": "copy_a_x",
+      "episodes": 5,
+      "mean_token_accuracy": 0.6057142857142856,
+      "exact_program_accuracy": 0.2,
+      "valid_program_rate": 0.2
+    },
+    "final_copy_a_x_02": {
+      "intent": "copy_a_x",
+      "episodes": 5,
+      "mean_token_accuracy": 0.6742857142857142,
+      "exact_program_accuracy": 0.4,
+      "valid_program_rate": 0.4
+    },
+    "final_copy_a_x_03": {
+      "intent": "copy_a_x",
+      "episodes": 5,
+      "mean_token_accuracy": 0.7885714285714286,
+      "exact_program_accuracy": 0.6,
+      "valid_program_rate": 0.6
+    },
+    "final_copy_a_x_04": {
+      "intent": "copy_a_x",
+      "episodes": 5,
+      "mean_token_accuracy": 0.5942857142857143,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.0
+    },
+    "final_copy_x_a_01": {
+      "intent": "copy_x_a",
+      "episodes": 5,
+      "mean_token_accuracy": 0.5885714285714286,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.4
+    },
+    "final_copy_x_a_02": {
+      "intent": "copy_x_a",
+      "episodes": 5,
+      "mean_token_accuracy": 0.5085714285714286,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.4
+    },
+    "final_copy_x_a_03": {
+      "intent": "copy_x_a",
+      "episodes": 5,
+      "mean_token_accuracy": 0.6399999999999999,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.6
+    },
+    "final_copy_x_a_04": {
+      "intent": "copy_x_a",
+      "episodes": 5,
+      "mean_token_accuracy": 0.5657142857142856,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.2
+    },
+    "final_div_ab_01": {
+      "intent": "div_ab",
+      "episodes": 5,
+      "mean_token_accuracy": 0.8571428571428571,
+      "exact_program_accuracy": 0.2,
+      "valid_program_rate": 0.6
+    },
+    "final_div_ab_02": {
+      "intent": "div_ab",
+      "episodes": 5,
+      "mean_token_accuracy": 0.7999999999999999,
+      "exact_program_accuracy": 0.2,
+      "valid_program_rate": 0.6
+    },
+    "final_div_ab_03": {
+      "intent": "div_ab",
+      "episodes": 5,
+      "mean_token_accuracy": 0.8,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.0
+    },
+    "final_div_ab_04": {
+      "intent": "div_ab",
+      "episodes": 5,
+      "mean_token_accuracy": 0.9428571428571428,
+      "exact_program_accuracy": 0.6,
+      "valid_program_rate": 0.6
+    },
+    "final_div_ba_01": {
+      "intent": "div_ba",
+      "episodes": 5,
+      "mean_token_accuracy": 0.7142857142857143,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 1.0
+    },
+    "final_div_ba_02": {
+      "intent": "div_ba",
+      "episodes": 5,
+      "mean_token_accuracy": 0.8285714285714286,
+      "exact_program_accuracy": 0.2,
+      "valid_program_rate": 0.6
+    },
+    "final_div_ba_03": {
+      "intent": "div_ba",
+      "episodes": 5,
+      "mean_token_accuracy": 0.7714285714285715,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.8
+    },
+    "final_div_ba_04": {
+      "intent": "div_ba",
+      "episodes": 5,
+      "mean_token_accuracy": 0.8,
+      "exact_program_accuracy": 0.0,
+      "valid_program_rate": 0.4
+    }
+  },
+  "first_error_position": {
+    "P2": 51,
+    "P0": 27,
+    "P3": 19,
+    "exact": 14,
+    "P4": 9
+  },
+  "most_common_sequences": [
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "DIVIDE",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 22
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "DIVIDE",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 16
+    },
+    {
+      "tokens": [
+        "NAME_X",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 12
+    },
+    {
+      "tokens": [
+        "NAME_X",
+        "ASSIGN",
+        "NAME_X",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 9
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "MINUS",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 7
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "NEWLINE",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 7
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "MINUS",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 7
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "DIVIDE",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 4
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "DIVIDE",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 4
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 3
+    },
+    {
+      "tokens": [
+        "NAME_A",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 3
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "MINUS",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 3
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "NEWLINE",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 2
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "NEWLINE",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 2
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "DIVIDE",
+        "EOS"
+      ],
+      "count": 2
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_A",
+        "MINUS",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 2
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "NAME_A",
+        "NAME_A",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 1
+    },
+    {
+      "tokens": [
+        "NAME_A",
+        "ASSIGN",
+        "NAME_B",
+        "NEWLINE",
+        "NAME_B",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 1
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "MINUS",
+        "NAME_B",
+        "NEWLINE",
+        "NEWLINE",
+        "EOS"
+      ],
+      "count": 1
+    },
+    {
+      "tokens": [
+        "NAME_Y",
+        "ASSIGN",
+        "NAME_B",
+        "NEWLINE",
+        "NAME_A",
+        "EOS"
+      ],
+      "count": 1
+    }
+  ],
+  "development_context_only": {
+    "mean_token_accuracy": 0.639,
+    "exact_program_accuracy": 0.1667,
+    "valid_program_rate": 0.3333,
+    "eos_completion_rate": 1.0
+  },
+  "integrity": {
+    "protocol_sha256": "a1715f2bd161aa94dfb9623b24455372044faf5953b6c9db57cc43f33ffd9af6",
+    "model_sha256": "857468c43e64dfca2394432459e695e4da58f60e5c4d2b50164df01533ee8411",
+    "final_holdout_sha256": "e2845e8aa6ae02e121c13eb1faace46c2788ebd372e14d0efb90b2c3a433317c",
+    "mapping_sha256": "b811159905e3d8a73bba8d005a71db69e571cf95ced97d928f07cf494c7d998a",
+    "direct_input_neurons": 3328,
+    "indirect_readout_neurons": 5873,
+    "feature_dimensions": 41111
+  },
+  "rules": [
+    "No fitting was performed during Step 77E.",
+    "No architecture or hyperparameter selection used final-holdout results.",
+    "Generation used greedy top-1 closed-loop feedback with the frozen Step-62 model.",
+    "The saved Step-62 neural mapping was loaded rather than recreated from the final holdout."
+  ]
+}

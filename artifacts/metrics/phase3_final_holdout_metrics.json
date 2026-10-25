@@ -1,0 +1,351 @@
+{
+  "phase": 3,
+  "step": "83",
+  "created_at_utc": "2026-10-25T01:45:28.888078+00:00",
+  "status": "PHASE3_FINAL_EVALUATION_COMPLETE",
+  "protocol_status": "FROZEN_BEFORE_PHASE3_FINAL_EVALUATION",
+  "training_performed": false,
+  "hyperparameter_tuning_performed": false,
+  "holdout": {
+    "file": "data/raw/phase3_fresh_holdout.jsonl",
+    "sha256": "7689c066d6daaffe5b06d1465870a99900201e81f57de08d2383084f98f4b47c",
+    "logical_prompts": 24,
+    "intents": {
+      "copy_a_x": 4,
+      "copy_x_a": 4,
+      "div_ab": 4,
+      "div_ba": 4,
+      "sub_ab": 4,
+      "sub_ba": 4
+    },
+    "neural_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "teacher_forced_final": {
+    "rows": 760,
+    "top1_accuracy": 0.8671052631578947,
+    "top2_accuracy": 0.9710526315789474,
+    "top3_accuracy": 0.9960526315789474,
+    "macro_f1": 0.8324811149030723,
+    "semantic_accuracy": 0.7895833333333333,
+    "semantic_macro_f1": 0.7159947434277874,
+    "accuracy_by_position": {
+      "0": {
+        "rows": 120,
+        "top1_accuracy": 0.775
+      },
+      "1": {
+        "rows": 120,
+        "top1_accuracy": 1.0
+      },
+      "2": {
+        "rows": 120,
+        "top1_accuracy": 0.6416666666666667
+      },
+      "3": {
+        "rows": 120,
+        "top1_accuracy": 0.8166666666666667
+      },
+      "4": {
+        "rows": 120,
+        "top1_accuracy": 0.925
+      },
+      "5": {
+        "rows": 80,
+        "top1_accuracy": 1.0
+      },
+      "6": {
+        "rows": 80,
+        "top1_accuracy": 1.0
+      }
+    },
+    "per_seed": {
+      "0": {
+        "rows": 152,
+        "top1_accuracy": 0.8486842105263158
+      },
+      "1": {
+        "rows": 152,
+        "top1_accuracy": 0.8881578947368421
+      },
+      "2": {
+        "rows": 152,
+        "top1_accuracy": 0.875
+      },
+      "3": {
+        "rows": 152,
+        "top1_accuracy": 0.875
+      },
+      "4": {
+        "rows": 152,
+        "top1_accuracy": 0.8486842105263158
+      }
+    },
+    "per_intent": {
+      "copy_a_x": {
+        "rows": 100,
+        "top1_accuracy": 0.92
+      },
+      "copy_x_a": {
+        "rows": 100,
+        "top1_accuracy": 0.75
+      },
+      "div_ab": {
+        "rows": 140,
+        "top1_accuracy": 0.9071428571428571
+      },
+      "div_ba": {
+        "rows": 140,
+        "top1_accuracy": 0.8642857142857143
+      },
+      "sub_ab": {
+        "rows": 140,
+        "top1_accuracy": 0.9
+      },
+      "sub_ba": {
+        "rows": 140,
+        "top1_accuracy": 0.8428571428571429
+      }
+    }
+  },
+  "closed_loop_final": {
+    "episodes": 120,
+    "mean_token_accuracy": 0.7657142857142856,
+    "exact_program_accuracy": 0.325,
+    "valid_program_rate": 0.8,
+    "syntax_valid_rate": 0.8,
+    "eos_completion_rate": 1.0,
+    "per_seed": {
+      "0": {
+        "episodes": 24,
+        "mean_token_accuracy": 0.730952380952381,
+        "exact_program_accuracy": 0.2916666666666667,
+        "valid_program_rate": 0.7916666666666666
+      },
+      "1": {
+        "episodes": 24,
+        "mean_token_accuracy": 0.7892857142857143,
+        "exact_program_accuracy": 0.4166666666666667,
+        "valid_program_rate": 0.875
+      },
+      "2": {
+        "episodes": 24,
+        "mean_token_accuracy": 0.7416666666666667,
+        "exact_program_accuracy": 0.2916666666666667,
+        "valid_program_rate": 0.8333333333333334
+      },
+      "3": {
+        "episodes": 24,
+        "mean_token_accuracy": 0.8178571428571427,
+        "exact_program_accuracy": 0.375,
+        "valid_program_rate": 0.7916666666666666
+      },
+      "4": {
+        "episodes": 24,
+        "mean_token_accuracy": 0.7488095238095237,
+        "exact_program_accuracy": 0.25,
+        "valid_program_rate": 0.7083333333333334
+      }
+    },
+    "per_intent": {
+      "copy_a_x": {
+        "episodes": 20,
+        "mean_token_accuracy": 0.8742857142857143,
+        "exact_program_accuracy": 0.6,
+        "valid_program_rate": 0.7
+      },
+      "copy_x_a": {
+        "episodes": 20,
+        "mean_token_accuracy": 0.4628571428571428,
+        "exact_program_accuracy": 0.0,
+        "valid_program_rate": 0.5
+      },
+      "div_ab": {
+        "episodes": 20,
+        "mean_token_accuracy": 0.8571428571428573,
+        "exact_program_accuracy": 0.5,
+        "valid_program_rate": 0.95
+      },
+      "div_ba": {
+        "episodes": 20,
+        "mean_token_accuracy": 0.85,
+        "exact_program_accuracy": 0.4,
+        "valid_program_rate": 0.95
+      },
+      "sub_ab": {
+        "episodes": 20,
+        "mean_token_accuracy": 0.8071428571428572,
+        "exact_program_accuracy": 0.35,
+        "valid_program_rate": 0.75
+      },
+      "sub_ba": {
+        "episodes": 20,
+        "mean_token_accuracy": 0.7428571428571428,
+        "exact_program_accuracy": 0.1,
+        "valid_program_rate": 0.95
+      }
+    },
+    "first_error_position": {
+      "exact": 39,
+      "P0": 27,
+      "P2": 38,
+      "P3": 15,
+      "P4": 1
+    },
+    "most_common_sequences": [
+      {
+        "tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "MINUS",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "count": 28
+      },
+      {
+        "tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "DIVIDE",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "count": 25
+      },
+      {
+        "tokens": [
+          "NAME_X",
+          "ASSIGN",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "count": 16
+      },
+      {
+        "tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "count": 16
+      },
+      {
+        "tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "DIVIDE",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "count": 13
+      },
+      {
+        "tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "MINUS",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "count": 13
+      },
+      {
+        "tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "DIVIDE",
+          "EOS"
+        ],
+        "count": 2
+      },
+      {
+        "tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_A",
+          "MINUS",
+          "NAME_A",
+          "NEWLINE",
+          "EOS"
+        ],
+        "count": 2
+      },
+      {
+        "tokens": [
+          "NAME_A",
+          "ASSIGN",
+          "NAME_X",
+          "NEWLINE",
+          "EOS"
+        ],
+        "count": 1
+      },
+      {
+        "tokens": [
+          "NAME_Y",
+          "ASSIGN",
+          "NAME_B",
+          "NEWLINE",
+          "EOS"
+        ],
+        "count": 1
+      }
+    ]
+  },
+  "development_context_not_final": {
+    "teacher_forced_development_test": {
+      "loss": 0.7599793076515198,
+      "top1_accuracy": 0.8052631578947368,
+      "macro_f1": 0.71728088477377,
+      "semantic_accuracy": 0.6916666666666667,
+      "semantic_macro_f1": 0.662000815908876,
+      "accuracy_by_position": {
+        "0": 0.7,
+        "1": 1.0,
+        "2": 0.5333333333333333,
+        "3": 0.6,
+        "4": 0.9333333333333333,
+        "5": 1.0,
+        "6": 1.0
+      },
+      "top2_accuracy": 0.9736842105263158,
+      "top3_accuracy": 0.9947368421052631
+    },
+    "closed_loop_development_test": {
+      "episodes": 30,
+      "mean_token_accuracy": 0.6457142857142859,
+      "exact_program_accuracy": 0.13333333333333333,
+      "valid_program_rate": 0.8333333333333334,
+      "syntax_valid_rate": 0.8333333333333334,
+      "eos_completion_rate": 1.0
+    }
+  },
+  "frozen_artifacts": {
+    "model_sha256": "58932cb5fdf89291cf99611b59c458712906728166e26de46c83cdb36f659da4",
+    "scaler_sha256": "5ddf15648ccbbcc3bbbcb2cf8f669ccfb50090b867e03abf9021b15420a959ed",
+    "mapping_sha256": "b811159905e3d8a73bba8d005a71db69e571cf95ced97d928f07cf494c7d998a"
+  },
+  "artifacts": {
+    "teacher_forced_predictions": "artifacts/metrics/phase3_final_holdout_teacher_forced_predictions.jsonl",
+    "closed_loop_predictions": "artifacts/metrics/phase3_final_holdout_closed_loop_predictions.jsonl"
+  },
+  "scientific_rule": "These are the one-time Phase-3 final holdout results for the frozen Step-80/81 pipeline. Do not retroactively tune the reported model using these final results."
+}
