@@ -78,11 +78,6 @@ Run it with:
 python scripts\pyfly_studio_v2_2_1440p.py
 ```
 
-Or on Windows, use:
-
-```text
-launch_pyfly_studio_v2_2_1440p.bat
-```
 
 ## Requirements
 
