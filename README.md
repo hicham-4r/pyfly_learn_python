@@ -109,7 +109,6 @@ PyFly/
 ├── artifacts/
 │   ├── models/
 │   └── metrics/
-├── launch_pyfly_studio_v2_2_1440p.bat
 └── README.md
 ```
 
